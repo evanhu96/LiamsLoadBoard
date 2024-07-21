@@ -1,0 +1,132 @@
+{
+    "Missouri City,TX-Dayton,NJ-6/14-0": {
+        "hash": "Missouri City,TX-Dayton,NJ-6/14-0",
+        "rate": 0,
+        "origin": "Missouri City,TX",
+        "destination": "Dayton,NJ",
+        "dates": "6/14",
+        "company": "48 ft",
+        "age": "2m",
+        "hourMinute": {
+            "hours": 11,
+            "minutes": 32
+        },
+        "epoch": 1718278324,
+        "date": "06/13/2024 07:32:04"
+    },
+    "Suffolk,VA-Camden,NJ-6/14-0": {
+        "hash": "Suffolk,VA-Camden,NJ-6/14-0",
+        "rate": 0,
+        "origin": "Suffolk,VA",
+        "destination": "Camden,NJ",
+        "dates": "6/14",
+        "company": "48 ft",
+        "age": "2m",
+        "hourMinute": {
+            "hours": 11,
+            "minutes": 32
+        },
+        "epoch": 1718278324,
+        "date": "06/13/2024 07:32:04"
+    },
+    "Philadelphia,PA-Valley,NE-undefined-2093": {
+        "hash": "Philadelphia,PA-Valley,NE-undefined-2093",
+        "rate": 2093,
+        "origin": "Philadelphia,PA",
+        "destination": "Valley,NE",
+        "hourMinute": {
+            "hours": 11,
+            "minutes": 32
+        },
+        "epoch": 1718278324,
+        "date": "06/13/2024 07:32:04"
+    },
+    "Swedesboro,NJ-Laredo,TX-undefined-3000": {
+        "hash": "Swedesboro,NJ-Laredo,TX-undefined-3000",
+        "rate": 3000,
+        "origin": "Swedesboro,NJ",
+        "destination": "Laredo,TX",
+        "hourMinute": {
+            "hours": 11,
+            "minutes": 32
+        },
+        "epoch": 1718278324,
+        "date": "06/13/2024 07:32:04"
+    },
+    "Sparrows Point,MD-Lockport,NY-6/13-0": {
+        "hash": "Sparrows Point,MD-Lockport,NY-6/13-0",
+        "rate": 0,
+        "origin": "Sparrows Point,MD",
+        "destination": "Lockport,NY",
+        "dates": "6/13",
+        "company": "48 ft",
+        "age": "0m",
+        "hourMinute": {
+            "hours": 11,
+            "minutes": 32
+        },
+        "epoch": 1718278324,
+        "date": "06/13/2024 07:32:04"
+    },
+    "New Salem,PA-Charleston,WV-6/13-0": {
+        "hash": "New Salem,PA-Charleston,WV-6/13-0",
+        "rate": 0,
+        "origin": "New Salem,PA",
+        "destination": "Charleston,WV",
+        "dates": "6/13",
+        "company": "48 ft",
+        "age": "15m",
+        "hourMinute": {
+            "hours": 11,
+            "minutes": 32
+        },
+        "epoch": 1718278324,
+        "date": "06/13/2024 07:32:04"
+    },
+    "New Salem,PA-Salem,VA-6/13-0": {
+        "hash": "New Salem,PA-Salem,VA-6/13-0",
+        "rate": 0,
+        "origin": "New Salem,PA",
+        "destination": "Salem,VA",
+        "dates": "6/13",
+        "company": "53 ft",
+        "age": "15m",
+        "hourMinute": {
+            "hours": 11,
+            "minutes": 32
+        },
+        "epoch": 1718278324,
+        "date": "06/13/2024 07:32:04"
+    },
+    "Wheatland,PA-Farmers Branch,TX-6/13-1400": {
+        "hash": "Wheatland,PA-Farmers Branch,TX-6/13-1400",
+        "rate": 1400,
+        "origin": "Wheatland,PA",
+        "destination": "Farmers Branch,TX",
+        "dates": "6/13",
+        "company": "15 ft",
+        "age": "22m",
+        "hourMinute": {
+            "hours": 11,
+            "minutes": 32
+        },
+        "epoch": 1718278324,
+        "date": "06/13/2024 07:32:04"
+    },
+    "Crystal Hill,VA-Wilmington,DE-6/13-1200": {
+        "hash": "Crystal Hill,VA-Wilmington,DE-6/13-1200",
+        "rate": 1200,
+        "origin": "Crystal Hill,VA",
+        "destination": "Wilmington,DE",
+        "dates": "6/13",
+        "company": "48 ft",
+        "age": "0m",
+        "hourMinute": {
+            "hours": 11,
+            "minutes": 32
+        },
+        "epoch": 1718278324,
+        "date": "06/13/2024 07:32:04",
+        "notes": "Loremaskccccccccccccccccccccccccccc kcdslkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
+    }
+}
