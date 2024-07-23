@@ -5,13 +5,13 @@ import { Table, Container, Stack } from "react-bootstrap";
 // Load component that accepts props
 const LoadBoard = ({ rows }) => {
   // Table rows can be generated based on the data props if there are multiple records.
- // Define a style object for the Notes column
- const notesCellStyle = {
-  maxWidth: '250px',
-  overflowWrap: 'break-word',
-  wordBreak: 'break-word',
-  whiteSpace: 'normal', // Ensure text wraps to the next line
-};
+  // Define a style object for the Notes column
+  const notesCellStyle = {
+    maxWidth: "250px",
+    overflowWrap: "break-word",
+    wordBreak: "break-word",
+    whiteSpace: "normal", // Ensure text wraps to the next line
+  };
 
   return (
     <Container>
@@ -38,7 +38,7 @@ const LoadBoard = ({ rows }) => {
           {rows.map((row, index) => (
             <tr key={index}>
               <td>
-                <a href={row.phoneNumber}>{row.phoneNumber}</a>
+                <a href={row.phoneNumber}>{row.phone}</a>
               </td>
               <td>{row.company}</td>
               <td>

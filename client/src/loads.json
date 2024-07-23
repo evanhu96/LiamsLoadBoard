@@ -1,132 +1,547 @@
 {
-    "Missouri City,TX-Dayton,NJ-6/14-0": {
-        "hash": "Missouri City,TX-Dayton,NJ-6/14-0",
+    "Philadelphia,PA-Angola,IN-7/23-0": {
+        "hash": "Philadelphia,PA-Angola,IN-7/23-0",
         "rate": 0,
-        "origin": "Missouri City,TX",
-        "destination": "Dayton,NJ",
-        "dates": "6/14",
-        "company": "48 ft",
-        "age": "2m",
-        "hourMinute": {
-            "hours": 11,
-            "minutes": 32
-        },
-        "epoch": 1718278324,
-        "date": "06/13/2024 07:32:04"
-    },
-    "Suffolk,VA-Camden,NJ-6/14-0": {
-        "hash": "Suffolk,VA-Camden,NJ-6/14-0",
-        "rate": 0,
-        "origin": "Suffolk,VA",
-        "destination": "Camden,NJ",
-        "dates": "6/14",
-        "company": "48 ft",
-        "age": "2m",
-        "hourMinute": {
-            "hours": 11,
-            "minutes": 32
-        },
-        "epoch": 1718278324,
-        "date": "06/13/2024 07:32:04"
-    },
-    "Philadelphia,PA-Valley,NE-undefined-2093": {
-        "hash": "Philadelphia,PA-Valley,NE-undefined-2093",
-        "rate": 2093,
         "origin": "Philadelphia,PA",
-        "destination": "Valley,NE",
+        "destination": "Angola,IN",
+        "dates": "7/23",
+        "company": "Automated Logistics Systems",
+        "age": "6m",
         "hourMinute": {
-            "hours": 11,
-            "minutes": 32
+            "hours": 1,
+            "minutes": 5
         },
-        "epoch": 1718278324,
-        "date": "06/13/2024 07:32:04"
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
     },
-    "Swedesboro,NJ-Laredo,TX-undefined-3000": {
-        "hash": "Swedesboro,NJ-Laredo,TX-undefined-3000",
-        "rate": 3000,
-        "origin": "Swedesboro,NJ",
-        "destination": "Laredo,TX",
+    "Philadelphia,PA-Columbia,TN-7/23-1700": {
+        "hash": "Philadelphia,PA-Columbia,TN-7/23-1700",
+        "rate": 1700,
+        "origin": "Philadelphia,PA",
+        "destination": "Columbia,TN",
+        "dates": "7/23",
+        "company": "Greenbush Logistics Inc",
+        "age": "12m",
         "hourMinute": {
-            "hours": 11,
-            "minutes": 32
+            "hours": 1,
+            "minutes": 5
         },
-        "epoch": 1718278324,
-        "date": "06/13/2024 07:32:04"
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
     },
-    "Sparrows Point,MD-Lockport,NY-6/13-0": {
-        "hash": "Sparrows Point,MD-Lockport,NY-6/13-0",
+    "Dayton,NJ-Auburn,NH-7/22-1000": {
+        "hash": "Dayton,NJ-Auburn,NH-7/22-1000",
+        "rate": 1000,
+        "origin": "Dayton,NJ",
+        "destination": "Auburn,NH",
+        "dates": "7/22",
+        "company": "Kirsch Transportation Services Inc",
+        "age": "12m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit": 640
+    },
+    "Sayreville,NJ-Muskogee,OK-7/22-2400": {
+        "hash": "Sayreville,NJ-Muskogee,OK-7/22-2400",
+        "rate": 2400,
+        "origin": "Sayreville,NJ",
+        "destination": "Muskogee,OK",
+        "dates": "7/22",
+        "company": "ARL Logistics LLC/ARL Transport LLC",
+        "age": "13m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "E Brunswick,NJ-S Ozone Park,NY-7/22 - 7/26-650": {
+        "hash": "E Brunswick,NJ-S Ozone Park,NY-7/22 - 7/26-650",
+        "rate": 650,
+        "origin": "E Brunswick,NJ",
+        "destination": "S Ozone Park,NY",
+        "dates": "7/22 - 7/26",
+        "company": "Matsonamerica - Matson",
+        "age": "17m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Bayville,NJ-Lantana,FL-7/22-0": {
+        "hash": "Bayville,NJ-Lantana,FL-7/22-0",
         "rate": 0,
-        "origin": "Sparrows Point,MD",
-        "destination": "Lockport,NY",
-        "dates": "6/13",
-        "company": "48 ft",
-        "age": "0m",
-        "hourMinute": {
-            "hours": 11,
-            "minutes": 32
-        },
-        "epoch": 1718278324,
-        "date": "06/13/2024 07:32:04"
-    },
-    "New Salem,PA-Charleston,WV-6/13-0": {
-        "hash": "New Salem,PA-Charleston,WV-6/13-0",
-        "rate": 0,
-        "origin": "New Salem,PA",
-        "destination": "Charleston,WV",
-        "dates": "6/13",
-        "company": "48 ft",
-        "age": "15m",
-        "hourMinute": {
-            "hours": 11,
-            "minutes": 32
-        },
-        "epoch": 1718278324,
-        "date": "06/13/2024 07:32:04"
-    },
-    "New Salem,PA-Salem,VA-6/13-0": {
-        "hash": "New Salem,PA-Salem,VA-6/13-0",
-        "rate": 0,
-        "origin": "New Salem,PA",
-        "destination": "Salem,VA",
-        "dates": "6/13",
-        "company": "53 ft",
-        "age": "15m",
-        "hourMinute": {
-            "hours": 11,
-            "minutes": 32
-        },
-        "epoch": 1718278324,
-        "date": "06/13/2024 07:32:04"
-    },
-    "Wheatland,PA-Farmers Branch,TX-6/13-1400": {
-        "hash": "Wheatland,PA-Farmers Branch,TX-6/13-1400",
-        "rate": 1400,
-        "origin": "Wheatland,PA",
-        "destination": "Farmers Branch,TX",
-        "dates": "6/13",
-        "company": "15 ft",
+        "origin": "Bayville,NJ",
+        "destination": "Lantana,FL",
+        "dates": "7/22",
+        "company": "Landstar Ranger",
         "age": "22m",
         "hourMinute": {
-            "hours": 11,
-            "minutes": 32
+            "hours": 1,
+            "minutes": 5
         },
-        "epoch": 1718278324,
-        "date": "06/13/2024 07:32:04"
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
     },
-    "Crystal Hill,VA-Wilmington,DE-6/13-1200": {
-        "hash": "Crystal Hill,VA-Wilmington,DE-6/13-1200",
-        "rate": 1200,
-        "origin": "Crystal Hill,VA",
-        "destination": "Wilmington,DE",
-        "dates": "6/13",
-        "company": "48 ft",
-        "age": "0m",
+    "Philadelphia,PA-Minneapolis,MN-7/22-2100": {
+        "hash": "Philadelphia,PA-Minneapolis,MN-7/22-2100",
+        "rate": 2100,
+        "origin": "Philadelphia,PA",
+        "destination": "Minneapolis,MN",
+        "dates": "7/22",
+        "company": "SMOOTH OPERATIONS LOGISTICS LLC",
+        "age": "24m",
         "hourMinute": {
-            "hours": 11,
-            "minutes": 32
+            "hours": 1,
+            "minutes": 5
         },
-        "epoch": 1718278324,
-        "date": "06/13/2024 07:32:04",
-        "notes": "Loremaskccccccccccccccccccccccccccc kcdslkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Philadelphia,PA-Wheatland,PA-7/22-650": {
+        "hash": "Philadelphia,PA-Wheatland,PA-7/22-650",
+        "rate": 650,
+        "origin": "Philadelphia,PA",
+        "destination": "Wheatland,PA",
+        "dates": "7/22",
+        "company": "SMOOTH OPERATIONS LOGISTICS LLC",
+        "age": "24m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Philadelphia,PA-Shelby,MT-7/22-4100": {
+        "hash": "Philadelphia,PA-Shelby,MT-7/22-4100",
+        "rate": 4100,
+        "origin": "Philadelphia,PA",
+        "destination": "Shelby,MT",
+        "dates": "7/22",
+        "company": "SMOOTH OPERATIONS LOGISTICS LLC",
+        "age": "24m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Philadelphia,PA-Mayfield,KY-7/22-1400": {
+        "hash": "Philadelphia,PA-Mayfield,KY-7/22-1400",
+        "rate": 1400,
+        "origin": "Philadelphia,PA",
+        "destination": "Mayfield,KY",
+        "dates": "7/22",
+        "company": "SMOOTH OPERATIONS LOGISTICS LLC",
+        "age": "24m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Avenel,NJ-Poughkeepsie,NY-7/22-400": {
+        "hash": "Avenel,NJ-Poughkeepsie,NY-7/22-400",
+        "rate": 400,
+        "origin": "Avenel,NJ",
+        "destination": "Poughkeepsie,NY",
+        "dates": "7/22",
+        "company": "SMOOTH OPERATIONS LOGISTICS LLC",
+        "age": "24m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Philadelphia,PA-Jeffersonville,OH-7/22-800": {
+        "hash": "Philadelphia,PA-Jeffersonville,OH-7/22-800",
+        "rate": 800,
+        "origin": "Philadelphia,PA",
+        "destination": "Jeffersonville,OH",
+        "dates": "7/22",
+        "company": "SMOOTH OPERATIONS LOGISTICS LLC",
+        "age": "24m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Philadelphia,PA-Holiday City,OH-7/22-950": {
+        "hash": "Philadelphia,PA-Holiday City,OH-7/22-950",
+        "rate": 950,
+        "origin": "Philadelphia,PA",
+        "destination": "Holiday City,OH",
+        "dates": "7/22",
+        "company": "SMOOTH OPERATIONS LOGISTICS LLC",
+        "age": "24m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Edison,NJ-Rutland,VT-7/22-900": {
+        "hash": "Edison,NJ-Rutland,VT-7/22-900",
+        "rate": 900,
+        "origin": "Edison,NJ",
+        "destination": "Rutland,VT",
+        "dates": "7/22",
+        "company": "SMOOTH OPERATIONS LOGISTICS LLC",
+        "age": "24m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Philadelphia,PA-Gadsden,AL-7/22-1400": {
+        "hash": "Philadelphia,PA-Gadsden,AL-7/22-1400",
+        "rate": 1400,
+        "origin": "Philadelphia,PA",
+        "destination": "Gadsden,AL",
+        "dates": "7/22",
+        "company": "SMOOTH OPERATIONS LOGISTICS LLC",
+        "age": "24m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Avenel,NJ-Woodside,NY-7/22-600": {
+        "hash": "Avenel,NJ-Woodside,NY-7/22-600",
+        "rate": 600,
+        "origin": "Avenel,NJ",
+        "destination": "Woodside,NY",
+        "dates": "7/22",
+        "company": "SMOOTH OPERATIONS LOGISTICS LLC",
+        "age": "24m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "E Brunswick,NJ-Newark,NJ-7/22-350": {
+        "hash": "E Brunswick,NJ-Newark,NJ-7/22-350",
+        "rate": 350,
+        "origin": "E Brunswick,NJ",
+        "destination": "Newark,NJ",
+        "dates": "7/22",
+        "company": "SMOOTH OPERATIONS LOGISTICS LLC",
+        "age": "24m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Philadelphia,PA-Marshalltown,IA-7/22-1850": {
+        "hash": "Philadelphia,PA-Marshalltown,IA-7/22-1850",
+        "rate": 1850,
+        "origin": "Philadelphia,PA",
+        "destination": "Marshalltown,IA",
+        "dates": "7/22",
+        "company": "SMOOTH OPERATIONS LOGISTICS LLC",
+        "age": "24m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Lancaster,PA-S Windsor,CT-7/22-0": {
+        "hash": "Lancaster,PA-S Windsor,CT-7/22-0",
+        "rate": 0,
+        "origin": "Lancaster,PA",
+        "destination": "S Windsor,CT",
+        "dates": "7/22",
+        "company": "New Prime Inc",
+        "age": "27m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Philadelphia,PA-New Columbia,PA-7/23-625": {
+        "hash": "Philadelphia,PA-New Columbia,PA-7/23-625",
+        "rate": 625,
+        "origin": "Philadelphia,PA",
+        "destination": "New Columbia,PA",
+        "dates": "7/23",
+        "company": "Sureway Transportation Company",
+        "age": "27m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Philadelphia,PA-Kennett Square,PA-7/24-350": {
+        "hash": "Philadelphia,PA-Kennett Square,PA-7/24-350",
+        "rate": 350,
+        "origin": "Philadelphia,PA",
+        "destination": "Kennett Square,PA",
+        "dates": "7/24",
+        "company": "Sureway Transportation Company",
+        "age": "27m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Philadelphia,PA-Kennett Square,PA-7/23-350": {
+        "hash": "Philadelphia,PA-Kennett Square,PA-7/23-350",
+        "rate": 350,
+        "origin": "Philadelphia,PA",
+        "destination": "Kennett Square,PA",
+        "dates": "7/23",
+        "company": "Sureway Transportation Company",
+        "age": "27m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "N Brunswick,NJ-S Burlington,VT-7/22-0": {
+        "hash": "N Brunswick,NJ-S Burlington,VT-7/22-0",
+        "rate": 0,
+        "origin": "N Brunswick,NJ",
+        "destination": "S Burlington,VT",
+        "dates": "7/22",
+        "company": "ATS Logistics/Sureway Transportation Co",
+        "age": "27m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Breinigsville,PA-Byron Ctr,MI-7/24-900": {
+        "hash": "Breinigsville,PA-Byron Ctr,MI-7/24-900",
+        "rate": 900,
+        "origin": "Breinigsville,PA",
+        "destination": "Byron Ctr,MI",
+        "dates": "7/24",
+        "company": "ATS Logistics/Sureway Transportation Co",
+        "age": "27m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Breinigsville,PA-Byron Ctr,MI-7/23-900": {
+        "hash": "Breinigsville,PA-Byron Ctr,MI-7/23-900",
+        "rate": 900,
+        "origin": "Breinigsville,PA",
+        "destination": "Byron Ctr,MI",
+        "dates": "7/23",
+        "company": "ATS Logistics/Sureway Transportation Co",
+        "age": "27m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Breinigsville,PA-Byron Ctr,MI-7/22-900": {
+        "hash": "Breinigsville,PA-Byron Ctr,MI-7/22-900",
+        "rate": 900,
+        "origin": "Breinigsville,PA",
+        "destination": "Byron Ctr,MI",
+        "dates": "7/22",
+        "company": "ATS Logistics/Sureway Transportation Co",
+        "age": "27m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Philadelphia,PA-Cortland,NY-7/22-0": {
+        "hash": "Philadelphia,PA-Cortland,NY-7/22-0",
+        "rate": 0,
+        "origin": "Philadelphia,PA",
+        "destination": "Cortland,NY",
+        "dates": "7/22",
+        "company": "RXO Capacity Solutions LLC",
+        "age": "27m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Philadelphia,PA-Ft Benning,GA-7/22-0": {
+        "hash": "Philadelphia,PA-Ft Benning,GA-7/22-0",
+        "rate": 0,
+        "origin": "Philadelphia,PA",
+        "destination": "Ft Benning,GA",
+        "dates": "7/22",
+        "company": "RXO Capacity Solutions LLC",
+        "age": "30m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Avenel,NJ-Providence,RI-7/22 - 7/24-700": {
+        "hash": "Avenel,NJ-Providence,RI-7/22 - 7/24-700",
+        "rate": 700,
+        "origin": "Avenel,NJ",
+        "destination": "Providence,RI",
+        "dates": "7/22 - 7/24",
+        "company": "D & L Transport Llc",
+        "age": "30m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Avenel,NJ-Providence,RI-7/22 - 7/24-750": {
+        "hash": "Avenel,NJ-Providence,RI-7/22 - 7/24-750",
+        "rate": 750,
+        "origin": "Avenel,NJ",
+        "destination": "Providence,RI",
+        "dates": "7/22 - 7/24",
+        "company": "Matsonamerica - Matson",
+        "age": "32m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Fairless Hills,PA-Riverhead,NY-7/22-800": {
+        "hash": "Fairless Hills,PA-Riverhead,NY-7/22-800",
+        "rate": 800,
+        "origin": "Fairless Hills,PA",
+        "destination": "Riverhead,NY",
+        "dates": "7/22",
+        "company": "Sureway Transportation Company",
+        "age": "32m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Philadelphia,PA-New Columbia,PA-7/24-625": {
+        "hash": "Philadelphia,PA-New Columbia,PA-7/24-625",
+        "rate": 625,
+        "origin": "Philadelphia,PA",
+        "destination": "New Columbia,PA",
+        "dates": "7/24",
+        "company": "Sureway Transportation Company",
+        "age": "32m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Sayreville,NJ-Buckeye,AZ-7/22-4300": {
+        "hash": "Sayreville,NJ-Buckeye,AZ-7/22-4300",
+        "rate": 4300,
+        "origin": "Sayreville,NJ",
+        "destination": "Buckeye,AZ",
+        "dates": "7/22",
+        "company": "Armstrong Transport Group Inc",
+        "age": "37m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
+    },
+    "Sayreville,NJ-Phoenix,AZ-7/22-4300": {
+        "hash": "Sayreville,NJ-Phoenix,AZ-7/22-4300",
+        "rate": 4300,
+        "origin": "Sayreville,NJ",
+        "destination": "Phoenix,AZ",
+        "dates": "7/22",
+        "company": "Armstrong Transport Group Inc",
+        "age": "37m",
+        "hourMinute": {
+            "hours": 1,
+            "minutes": 5
+        },
+        "epoch": 1721610346,
+        "phone": "ohne",
+        "date": "07/21/2024 21:05:46"
     }
 }

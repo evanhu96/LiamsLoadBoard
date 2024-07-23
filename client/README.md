@@ -1,12 +1,13 @@
 ## USER STORY
+User will be able to use application to connect to a database of loads
+
+loads will uptade live 
 
 User will open a web browser that has this application running
 
 <!-- User should type in location, when they will be at location (today,tomorrow,monday) ,and max deadhead  -->
 
 Request will connect to a graphql back end
-
-
 
 User will get list of potential loads (additional inputs include distance and total time)
 
