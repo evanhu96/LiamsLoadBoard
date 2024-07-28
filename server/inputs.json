@@ -1,0 +1,12 @@
+{
+  "hash": "String",
+  "company": "String",
+  "contact": "String",
+  "origin": "String",
+  "destination": "String",
+  "travelTime": 22,
+  "hotSpot": "String",
+  "distanceFromHotSpot": "String",
+  "age": "String",
+  "notes": "String"
+}

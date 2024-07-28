@@ -1,0 +1,642 @@
+{
+    "Edison,NJ-Elizabeth City,NC-7/27-1050-ATS ": {
+        "hash": "Edison,NJ-Elizabeth City,NC-7/27-1050-ATS ",
+        "rate": 1050,
+        "origin": "Edison,NJ",
+        "destination": "Elizabeth City,NC",
+        "dates": "7/27",
+        "company": "ATS Logistics/Sureway Transportation Co",
+        "age": "25m",
+        "contact": "(320) 534-2261",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Mt Gilead,NC-Reading,PA-7/27-0-Dsv ": {
+        "hash": "Mt Gilead,NC-Reading,PA-7/27-0-Dsv ",
+        "rate": 0,
+        "origin": "Mt Gilead,NC",
+        "destination": "Reading,PA",
+        "dates": "7/27",
+        "company": "Dsv Road Inc",
+        "age": "31m",
+        "contact": "(618) 310-0092",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Louisburg,NC-Fairless Hills,PA-7/27-1125-ATS ": {
+        "hash": "Louisburg,NC-Fairless Hills,PA-7/27-1125-ATS ",
+        "rate": 1125,
+        "origin": "Louisburg,NC",
+        "destination": "Fairless Hills,PA",
+        "dates": "7/27",
+        "company": "ATS Logistics/Sureway Transportation Co",
+        "age": "51m",
+        "contact": "(865) 867-2337",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Chambersburg,PA-Hammonton,NJ-7/27-550-ATS ": {
+        "hash": "Chambersburg,PA-Hammonton,NJ-7/27-550-ATS ",
+        "rate": 550,
+        "origin": "Chambersburg,PA",
+        "destination": "Hammonton,NJ",
+        "dates": "7/27",
+        "company": "ATS Logistics/Sureway Transportation Co",
+        "age": "56m",
+        "contact": "(865) 867-2337",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Nazareth,PA-Channahon,IL-7/29-1300-Ryan": {
+        "hash": "Nazareth,PA-Channahon,IL-7/29-1300-Ryan",
+        "rate": 1300,
+        "origin": "Nazareth,PA",
+        "destination": "Channahon,IL",
+        "dates": "7/29",
+        "company": "Ryan Transportation Service Inc",
+        "age": "3m",
+        "contact": "(913) 553-5514",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Fairless Hills,PA-Plattsburgh,NY-7/29-0-Land": {
+        "hash": "Fairless Hills,PA-Plattsburgh,NY-7/29-0-Land",
+        "rate": 0,
+        "origin": "Fairless Hills,PA",
+        "destination": "Plattsburgh,NY",
+        "dates": "7/29",
+        "company": "Landstar Ranger",
+        "age": "3m",
+        "contact": "(863) 393-8800",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Coatesville,PA-Green Bay,WI-7/29-1200-Simp": {
+        "hash": "Coatesville,PA-Green Bay,WI-7/29-1200-Simp",
+        "rate": 1200,
+        "origin": "Coatesville,PA",
+        "destination": "Green Bay,WI",
+        "dates": "7/29",
+        "company": "Simple Logistics Solutions",
+        "age": "6m",
+        "contact": "(629) 257-7920",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Quarryville,PA-Washington,DC-7/29-350-Land": {
+        "hash": "Quarryville,PA-Washington,DC-7/29-350-Land",
+        "rate": 350,
+        "origin": "Quarryville,PA",
+        "destination": "Washington,DC",
+        "dates": "7/29",
+        "company": "Landstar Ranger Inc",
+        "age": "8m",
+        "contact": "charlie@avohaul.com",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Bristol,PA-Saco,ME-7/29 - 7/31-935-Land": {
+        "hash": "Bristol,PA-Saco,ME-7/29 - 7/31-935-Land",
+        "rate": 935,
+        "origin": "Bristol,PA",
+        "destination": "Saco,ME",
+        "dates": "7/29 - 7/31",
+        "company": "Landstar Ranger Inc",
+        "age": "8m",
+        "contact": "(260) 207-4762",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Avenel,NJ-S Fallsburg,NY-7/29-0-Klc ": {
+        "hash": "Avenel,NJ-S Fallsburg,NY-7/29-0-Klc ",
+        "rate": 0,
+        "origin": "Avenel,NJ",
+        "destination": "S Fallsburg,NY",
+        "dates": "7/29",
+        "company": "Klc Logistics Inc",
+        "age": "8m",
+        "contact": "(217) 469-2158",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Avenel,NJ-Dover,NH-7/29-0-Klc ": {
+        "hash": "Avenel,NJ-Dover,NH-7/29-0-Klc ",
+        "rate": 0,
+        "origin": "Avenel,NJ",
+        "destination": "Dover,NH",
+        "dates": "7/29",
+        "company": "Klc Logistics Inc",
+        "age": "8m",
+        "contact": "(217) 469-2158",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Bridgeport,NJ-Brooklyn,NY-7/29-0-Klc ": {
+        "hash": "Bridgeport,NJ-Brooklyn,NY-7/29-0-Klc ",
+        "rate": 0,
+        "origin": "Bridgeport,NJ",
+        "destination": "Brooklyn,NY",
+        "dates": "7/29",
+        "company": "Klc Logistics Inc",
+        "age": "8m",
+        "contact": "(217) 469-2158",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Philadelphia,PA-Cortland,NY-7/30-0-Klc ": {
+        "hash": "Philadelphia,PA-Cortland,NY-7/30-0-Klc ",
+        "rate": 0,
+        "origin": "Philadelphia,PA",
+        "destination": "Cortland,NY",
+        "dates": "7/30",
+        "company": "Klc Logistics Inc",
+        "age": "8m",
+        "contact": "(217) 469-2158",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Edison,NJ-Rutland,VT-7/29-0-Klc ": {
+        "hash": "Edison,NJ-Rutland,VT-7/29-0-Klc ",
+        "rate": 0,
+        "origin": "Edison,NJ",
+        "destination": "Rutland,VT",
+        "dates": "7/29",
+        "company": "Klc Logistics Inc",
+        "age": "8m",
+        "contact": "(217) 469-2158",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Philadelphia,PA-Cortland,NY-7/29-0-Klc ": {
+        "hash": "Philadelphia,PA-Cortland,NY-7/29-0-Klc ",
+        "rate": 0,
+        "origin": "Philadelphia,PA",
+        "destination": "Cortland,NY",
+        "dates": "7/29",
+        "company": "Klc Logistics Inc",
+        "age": "8m",
+        "contact": "(217) 469-2158",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Bridgeport,NJ-Brooklyn,NY-7/30-0-Klc ": {
+        "hash": "Bridgeport,NJ-Brooklyn,NY-7/30-0-Klc ",
+        "rate": 0,
+        "origin": "Bridgeport,NJ",
+        "destination": "Brooklyn,NY",
+        "dates": "7/30",
+        "company": "Klc Logistics Inc",
+        "age": "8m",
+        "contact": "(217) 469-2158",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Avenel,NJ-Dover,NH-7/30-0-Klc ": {
+        "hash": "Avenel,NJ-Dover,NH-7/30-0-Klc ",
+        "rate": 0,
+        "origin": "Avenel,NJ",
+        "destination": "Dover,NH",
+        "dates": "7/30",
+        "company": "Klc Logistics Inc",
+        "age": "8m",
+        "contact": "(217) 469-2158",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Avenel,NJ-S Fallsburg,NY-7/30-0-Klc ": {
+        "hash": "Avenel,NJ-S Fallsburg,NY-7/30-0-Klc ",
+        "rate": 0,
+        "origin": "Avenel,NJ",
+        "destination": "S Fallsburg,NY",
+        "dates": "7/30",
+        "company": "Klc Logistics Inc",
+        "age": "8m",
+        "contact": "(217) 469-2158",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Edison,NJ-Rutland,VT-7/30-0-Klc ": {
+        "hash": "Edison,NJ-Rutland,VT-7/30-0-Klc ",
+        "rate": 0,
+        "origin": "Edison,NJ",
+        "destination": "Rutland,VT",
+        "dates": "7/30",
+        "company": "Klc Logistics Inc",
+        "age": "8m",
+        "contact": "(217) 469-2158",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Wall Twp,NJ-Morrilton,AR-7/29-0-Worl": {
+        "hash": "Wall Twp,NJ-Morrilton,AR-7/29-0-Worl",
+        "rate": 0,
+        "origin": "Wall Twp,NJ",
+        "destination": "Morrilton,AR",
+        "dates": "7/29",
+        "company": "Worldwide Express",
+        "age": "11m",
+        "contact": "(888) 956-7447",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Aberdeen,MD-Brooklyn,NY-7/29-950-Glob": {
+        "hash": "Aberdeen,MD-Brooklyn,NY-7/29-950-Glob",
+        "rate": 950,
+        "origin": "Aberdeen,MD",
+        "destination": "Brooklyn,NY",
+        "dates": "7/29",
+        "company": "Globaltranz/Afn",
+        "age": "11m",
+        "contact": "(877) 236-3734",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Croydon,PA-Stouffville,ON-7/30-875-Ship": {
+        "hash": "Croydon,PA-Stouffville,ON-7/30-875-Ship",
+        "rate": 875,
+        "origin": "Croydon,PA",
+        "destination": "Stouffville,ON",
+        "dates": "7/30",
+        "company": "Shipping Connections Inc",
+        "age": "13m",
+        "contact": "(479) 439-0219 x207",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Croydon,PA-Stouffville,ON-7/29-875-Ship": {
+        "hash": "Croydon,PA-Stouffville,ON-7/29-875-Ship",
+        "rate": 875,
+        "origin": "Croydon,PA",
+        "destination": "Stouffville,ON",
+        "dates": "7/29",
+        "company": "Shipping Connections Inc",
+        "age": "13m",
+        "contact": "(479) 439-0219 x207",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Vineland,NJ-Washington,DC-7/29-725-Circ": {
+        "hash": "Vineland,NJ-Washington,DC-7/29-725-Circ",
+        "rate": 725,
+        "origin": "Vineland,NJ",
+        "destination": "Washington,DC",
+        "dates": "7/29",
+        "company": "Circle Logistics Inc",
+        "age": "13m",
+        "contact": "(260) 582-4229",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Avenel,NJ-Dover,NH-7/29 - 7/31-1050-Mats": {
+        "hash": "Avenel,NJ-Dover,NH-7/29 - 7/31-1050-Mats",
+        "rate": 1050,
+        "origin": "Avenel,NJ",
+        "destination": "Dover,NH",
+        "dates": "7/29 - 7/31",
+        "company": "Matsonamerica - Matson",
+        "age": "13m",
+        "contact": "(727) 265-6193",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Avenel,NJ-S Fallsburg,NY-7/29 - 7/31-550-Mats": {
+        "hash": "Avenel,NJ-S Fallsburg,NY-7/29 - 7/31-550-Mats",
+        "rate": 550,
+        "origin": "Avenel,NJ",
+        "destination": "S Fallsburg,NY",
+        "dates": "7/29 - 7/31",
+        "company": "Matsonamerica - Matson",
+        "age": "13m",
+        "contact": "(727) 265-6193",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Pennsauken,NJ-Spring Valley,IL-7/29-800-Spot": {
+        "hash": "Pennsauken,NJ-Spring Valley,IL-7/29-800-Spot",
+        "rate": 800,
+        "origin": "Pennsauken,NJ",
+        "destination": "Spring Valley,IL",
+        "dates": "7/29",
+        "company": "Spot Freight Inc",
+        "age": "15m",
+        "contact": "(317) 635-6207",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Bristol,PA-Saco,ME-7/30-1050-Sure": {
+        "hash": "Bristol,PA-Saco,ME-7/30-1050-Sure",
+        "rate": 1050,
+        "origin": "Bristol,PA",
+        "destination": "Saco,ME",
+        "dates": "7/30",
+        "company": "Sureway Transportation Company",
+        "age": "18m",
+        "contact": "(239) 333-5415",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Bristol,PA-Saco,ME-7/29-1050-Sure": {
+        "hash": "Bristol,PA-Saco,ME-7/29-1050-Sure",
+        "rate": 1050,
+        "origin": "Bristol,PA",
+        "destination": "Saco,ME",
+        "dates": "7/29",
+        "company": "Sureway Transportation Company",
+        "age": "18m",
+        "contact": "(239) 333-5415",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Philadelphia,PA-Belfast,ME-7/29-0-Sure": {
+        "hash": "Philadelphia,PA-Belfast,ME-7/29-0-Sure",
+        "rate": 0,
+        "origin": "Philadelphia,PA",
+        "destination": "Belfast,ME",
+        "dates": "7/29",
+        "company": "Sureway Transportation Company",
+        "age": "18m",
+        "contact": "(541) 826-4786",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Erial,NJ-Arlington,VA-7/29-650-Kirs": {
+        "hash": "Erial,NJ-Arlington,VA-7/29-650-Kirs",
+        "rate": 650,
+        "origin": "Erial,NJ",
+        "destination": "Arlington,VA",
+        "dates": "7/29",
+        "company": "Kirsch Transportation Services Inc",
+        "age": "22m",
+        "contact": "operations1@kirschtrans.com",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Edison,NJ-Bridgeville,PA-7/29-900-Logi": {
+        "hash": "Edison,NJ-Bridgeville,PA-7/29-900-Logi",
+        "rate": 900,
+        "origin": "Edison,NJ",
+        "destination": "Bridgeville,PA",
+        "dates": "7/29",
+        "company": "Logistic Dynamics LLC/LDI Trucking Inc",
+        "age": "28m",
+        "contact": "(727) 506-5409",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "S Plainfield,NJ-Rosebush,MI-7/29-0-ONST": {
+        "hash": "S Plainfield,NJ-Rosebush,MI-7/29-0-ONST",
+        "rate": 0,
+        "origin": "S Plainfield,NJ",
+        "destination": "Rosebush,MI",
+        "dates": "7/29",
+        "company": "ONSTAR FREIGHT INC",
+        "age": "32m",
+        "contact": "(317) 536-5109",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Morrisville,PA-Hanover Park,IL-7/29-1400-Land": {
+        "hash": "Morrisville,PA-Hanover Park,IL-7/29-1400-Land",
+        "rate": 1400,
+        "origin": "Morrisville,PA",
+        "destination": "Hanover Park,IL",
+        "dates": "7/29",
+        "company": "Landstar Ranger Inc",
+        "age": "43m",
+        "contact": "(980) 280-9901",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Royersford,PA-Webster,NY-7/29-1000-Ryan": {
+        "hash": "Royersford,PA-Webster,NY-7/29-1000-Ryan",
+        "rate": 1000,
+        "origin": "Royersford,PA",
+        "destination": "Webster,NY",
+        "dates": "7/29",
+        "company": "Ryan Transportation Service Inc",
+        "age": "43m",
+        "contact": "(913) 553-5506",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Toughkenamon,PA-N Charleston,SC-7/29-1250-SPI ": {
+        "hash": "Toughkenamon,PA-N Charleston,SC-7/29-1250-SPI ",
+        "rate": 1250,
+        "origin": "Toughkenamon,PA",
+        "destination": "N Charleston,SC",
+        "dates": "7/29",
+        "company": "SPI Logistics",
+        "age": "44m",
+        "contact": "(931) 368-8679",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Philadelphia,PA-Scranton,PA-7/30-0-RXO ": {
+        "hash": "Philadelphia,PA-Scranton,PA-7/30-0-RXO ",
+        "rate": 0,
+        "origin": "Philadelphia,PA",
+        "destination": "Scranton,PA",
+        "dates": "7/30",
+        "company": "RXO Capacity Solutions LLC",
+        "age": "47m",
+        "contact": "(704) 317-1027",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Telford,PA-Lakeside,MT-7/29-4700-Mode": {
+        "hash": "Telford,PA-Lakeside,MT-7/29-4700-Mode",
+        "rate": 4700,
+        "origin": "Telford,PA",
+        "destination": "Lakeside,MT",
+        "dates": "7/29",
+        "company": "Mode Transportation Llc",
+        "age": "48m",
+        "contact": "matthew.shupinski@modetransportation.com",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Millville,NJ-Springfield,IL-7/29-1400-Mode": {
+        "hash": "Millville,NJ-Springfield,IL-7/29-1400-Mode",
+        "rate": 1400,
+        "origin": "Millville,NJ",
+        "destination": "Springfield,IL",
+        "dates": "7/29",
+        "company": "Mode Transportation Llc",
+        "age": "48m",
+        "contact": "Joe.McMichael@modetransportation.com",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    },
+    "Avenel,NJ-New Freedom,PA-7/29-650-Mats": {
+        "hash": "Avenel,NJ-New Freedom,PA-7/29-650-Mats",
+        "rate": 650,
+        "origin": "Avenel,NJ",
+        "destination": "New Freedom,PA",
+        "dates": "7/29",
+        "company": "Matsonamerica - Matson",
+        "age": "53m",
+        "contact": "(727) 310-8220",
+        "hourMinute": {
+            "hours": 22,
+            "minutes": 52
+        },
+        "epoch": 1722120741,
+        "date": "07/27/2024 18:52:21"
+    }
+}

@@ -1,12 +1,8 @@
 import React from "react";
-import LoadBoard from "./components/LoadBoard";
 import FormComponent from "./components/FormComponent";
-import Test from "./components/Test";
+import LoadBoard from "./components/LoadBoard";
+
 // import Test from "./Test";
-import ListGroup from "react-bootstrap/ListGroup";
-import "bootstrap/dist/css/bootstrap.min.css";
-import loads from "./loads.json";
-import { GET_LOADS } from "./utils/queries";
 import {
   ApolloClient,
   ApolloProvider,
@@ -14,6 +10,9 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+import "bootstrap/dist/css/bootstrap.min.css";
+import ListGroup from "react-bootstrap/ListGroup";
+import loads from "./loads.json";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -39,19 +38,12 @@ const client = new ApolloClient({
 });
 
 function App() {
-  client
-  .query({
-    query: GET_LOADS,
-  })
-  .then((result) => console.log('Connected to backend:', result))
-  .catch((error) => console.error('Error connecting to backend:', error));
-
   return (
     <ApolloProvider client={client}>
       <Router>
         <div className="container mt-5">
           <h1 className="mb-4">Liams LoadBoard</h1>
-          <Test/>
+          {/* <Test/> */}
           <FormComponent />
           <ListGroup>
             <LoadBoard rows={Object.values(loads)} />

@@ -4,6 +4,7 @@ const path = require("path");
 require("dotenv").config();
 const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
+// C:/Users/evanh/OneDrive/Desktop/liams-load-board/seeder/MasterDat/currentLoads.json
 
 const PORT = process.env.PORT || 6001;
 const app = express();
@@ -35,13 +36,13 @@ if (process.env.NODE_ENV === "development") {
 const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();
   server.applyMiddleware({ app });
-
   db.once("open", () => {
-    app.listen(PORT, () => {
+    app.listen(PORT, async () => {
       console.log(`API server running on port ${PORT}!`);
       console.log(
         `Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`
       );
+      // await main();
     });
   });
 };

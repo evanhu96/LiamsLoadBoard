@@ -12,8 +12,10 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1,
+        "notes":"oswdddddddddddddddddddddddddddddddddddddd"
     },
     "Philadelphia,PA-Columbia,TN-7/23-1700": {
         "hash": "Philadelphia,PA-Columbia,TN-7/23-1700",
@@ -28,8 +30,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "5702659489",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Dayton,NJ-Auburn,NH-7/22-1000": {
         "hash": "Dayton,NJ-Auburn,NH-7/22-1000",
@@ -44,9 +47,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
+        "contact": "evanhu320@gmail.com",
         "date": "07/21/2024 21:05:46",
-        "profit": 640
+        "profit":1
     },
     "Sayreville,NJ-Muskogee,OK-7/22-2400": {
         "hash": "Sayreville,NJ-Muskogee,OK-7/22-2400",
@@ -61,8 +64,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "evanhughes66@yahoo.com",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "E Brunswick,NJ-S Ozone Park,NY-7/22 - 7/26-650": {
         "hash": "E Brunswick,NJ-S Ozone Park,NY-7/22 - 7/26-650",
@@ -77,8 +81,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Bayville,NJ-Lantana,FL-7/22-0": {
         "hash": "Bayville,NJ-Lantana,FL-7/22-0",
@@ -93,8 +98,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":13
     },
     "Philadelphia,PA-Minneapolis,MN-7/22-2100": {
         "hash": "Philadelphia,PA-Minneapolis,MN-7/22-2100",
@@ -109,8 +115,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":0
     },
     "Philadelphia,PA-Wheatland,PA-7/22-650": {
         "hash": "Philadelphia,PA-Wheatland,PA-7/22-650",
@@ -125,8 +132,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Philadelphia,PA-Shelby,MT-7/22-4100": {
         "hash": "Philadelphia,PA-Shelby,MT-7/22-4100",
@@ -141,8 +149,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Philadelphia,PA-Mayfield,KY-7/22-1400": {
         "hash": "Philadelphia,PA-Mayfield,KY-7/22-1400",
@@ -157,8 +166,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Avenel,NJ-Poughkeepsie,NY-7/22-400": {
         "hash": "Avenel,NJ-Poughkeepsie,NY-7/22-400",
@@ -173,8 +183,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Philadelphia,PA-Jeffersonville,OH-7/22-800": {
         "hash": "Philadelphia,PA-Jeffersonville,OH-7/22-800",
@@ -189,8 +200,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Philadelphia,PA-Holiday City,OH-7/22-950": {
         "hash": "Philadelphia,PA-Holiday City,OH-7/22-950",
@@ -205,8 +217,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Edison,NJ-Rutland,VT-7/22-900": {
         "hash": "Edison,NJ-Rutland,VT-7/22-900",
@@ -221,8 +234,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Philadelphia,PA-Gadsden,AL-7/22-1400": {
         "hash": "Philadelphia,PA-Gadsden,AL-7/22-1400",
@@ -237,8 +251,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Avenel,NJ-Woodside,NY-7/22-600": {
         "hash": "Avenel,NJ-Woodside,NY-7/22-600",
@@ -253,8 +268,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "E Brunswick,NJ-Newark,NJ-7/22-350": {
         "hash": "E Brunswick,NJ-Newark,NJ-7/22-350",
@@ -269,8 +285,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Philadelphia,PA-Marshalltown,IA-7/22-1850": {
         "hash": "Philadelphia,PA-Marshalltown,IA-7/22-1850",
@@ -285,8 +302,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Lancaster,PA-S Windsor,CT-7/22-0": {
         "hash": "Lancaster,PA-S Windsor,CT-7/22-0",
@@ -301,8 +319,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Philadelphia,PA-New Columbia,PA-7/23-625": {
         "hash": "Philadelphia,PA-New Columbia,PA-7/23-625",
@@ -317,8 +336,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Philadelphia,PA-Kennett Square,PA-7/24-350": {
         "hash": "Philadelphia,PA-Kennett Square,PA-7/24-350",
@@ -333,8 +353,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Philadelphia,PA-Kennett Square,PA-7/23-350": {
         "hash": "Philadelphia,PA-Kennett Square,PA-7/23-350",
@@ -349,8 +370,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "N Brunswick,NJ-S Burlington,VT-7/22-0": {
         "hash": "N Brunswick,NJ-S Burlington,VT-7/22-0",
@@ -365,8 +387,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Breinigsville,PA-Byron Ctr,MI-7/24-900": {
         "hash": "Breinigsville,PA-Byron Ctr,MI-7/24-900",
@@ -381,8 +404,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Breinigsville,PA-Byron Ctr,MI-7/23-900": {
         "hash": "Breinigsville,PA-Byron Ctr,MI-7/23-900",
@@ -397,8 +421,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Breinigsville,PA-Byron Ctr,MI-7/22-900": {
         "hash": "Breinigsville,PA-Byron Ctr,MI-7/22-900",
@@ -413,8 +438,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Philadelphia,PA-Cortland,NY-7/22-0": {
         "hash": "Philadelphia,PA-Cortland,NY-7/22-0",
@@ -429,8 +455,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Philadelphia,PA-Ft Benning,GA-7/22-0": {
         "hash": "Philadelphia,PA-Ft Benning,GA-7/22-0",
@@ -445,8 +472,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Avenel,NJ-Providence,RI-7/22 - 7/24-700": {
         "hash": "Avenel,NJ-Providence,RI-7/22 - 7/24-700",
@@ -461,8 +489,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Avenel,NJ-Providence,RI-7/22 - 7/24-750": {
         "hash": "Avenel,NJ-Providence,RI-7/22 - 7/24-750",
@@ -477,8 +506,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Fairless Hills,PA-Riverhead,NY-7/22-800": {
         "hash": "Fairless Hills,PA-Riverhead,NY-7/22-800",
@@ -493,8 +523,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Philadelphia,PA-New Columbia,PA-7/24-625": {
         "hash": "Philadelphia,PA-New Columbia,PA-7/24-625",
@@ -509,8 +540,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Sayreville,NJ-Buckeye,AZ-7/22-4300": {
         "hash": "Sayreville,NJ-Buckeye,AZ-7/22-4300",
@@ -525,8 +557,9 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     },
     "Sayreville,NJ-Phoenix,AZ-7/22-4300": {
         "hash": "Sayreville,NJ-Phoenix,AZ-7/22-4300",
@@ -541,7 +574,8 @@
             "minutes": 5
         },
         "epoch": 1721610346,
-        "phone": "ohne",
-        "date": "07/21/2024 21:05:46"
+        "contact": "ohne",
+        "date": "07/21/2024 21:05:46",
+        "profit":1
     }
 }
