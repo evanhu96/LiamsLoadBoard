@@ -1,4 +1,7 @@
 node_modules
 
 seeder
-currentLoads
+processor
+
+currentInputs.json
+currentLoads.json

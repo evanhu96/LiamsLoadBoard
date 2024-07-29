@@ -1,11 +1,10 @@
 const Inputs = require("../models/Inputs");
+const Load = require("../models/Load");
 
 fs = require("fs");
 var currentLoads = require("../../currentLoads.json");
 // import fresh
 const importFresh = require("import-fresh");
-const check4Loads = require("../helpers/check4Loads");
-const { Load } = require("../models");
 // find new current loads every 10 second
 setInterval(() => {
   currentLoads = importFresh("../../currentLoads.json");
@@ -20,7 +19,7 @@ const resolvers = {
       fs.writeFileSync(
         "../currentInputs.json",
         JSON.stringify({
-          location:"New York",
+          location: "Philadelphia, PA",
           arrivalDate,
           dates,
           deadhead,
@@ -32,7 +31,7 @@ const resolvers = {
       // delete old inputs
       await Inputs.deleteMany({});
       Inputs.create({
-        location:"New York",
+        location: "Philadelphia, PA",
         arrivalDate,
         dates,
         deadhead,
@@ -55,9 +54,7 @@ const resolvers = {
     },
     loads: async (_) => {
       // check for new loads every 15 seconds
-      const loads = await check4Loads(currentLoads, currentInputs);
-      console.log(loads);
-      console.log(loads.length);
+      const loads = await Load.find({});
       return loads;
 
       // return JSON.parse(loads);

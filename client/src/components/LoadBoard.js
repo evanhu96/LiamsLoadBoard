@@ -30,14 +30,12 @@ const LoadBoard = ({ rows }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       if (!loading && !error) {
-        console.log("Refetching data...");
         refetch();
       }
     }, 10000); // 10000 ms = 10 seconds
-
     // Clean up the interval on component unmount
     return () => clearInterval(interval);
-  }, [loading, error, refetch]);
+  }, [loading, error, data, refetch]);
   // refetch if not loading
   if (!loading && data && !error) {
     const tempRows = data.loads;
