@@ -9,9 +9,7 @@ const check4Loads = async (
   loads,
   { dates, deadhead, combined, distance, location }
 ) => {
-  // const { dates, deadhead, combined, distance, location } = importFresh(
-  //   "../currentInputs.json"
-  // );
+
   const keys = Object.keys(loads);
   const goodLoads = [];
   for (const key of keys) {

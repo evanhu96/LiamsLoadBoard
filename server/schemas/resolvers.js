@@ -5,27 +5,14 @@ fs = require("fs");
 var currentLoads = require("../../currentLoads.json");
 // import fresh
 // find new current loads every 10 second
-setInterval(() => {
-  currentLoads = importFresh("../../currentLoads.json");
-  currentInputs = importFresh("../../currentInputs.json");
-}, 1000);
+
 const resolvers = {
   Query: {
     loadInputs: async (
       _,
       { location, arrivalDate, dates, deadhead, distance, combined }
     ) => {
-      fs.writeFileSync(
-        "../currentInputs.json",
-        JSON.stringify({
-          location: "Philadelphia, PA",
-          arrivalDate,
-          dates,
-          deadhead,
-          distance,
-          combined,
-        })
-      );
+
       console.log("inputs resolver");
       // delete old inputs
       await Inputs.deleteMany({});
