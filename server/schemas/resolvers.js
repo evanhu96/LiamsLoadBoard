@@ -4,7 +4,6 @@ const Load = require("../models/Load");
 fs = require("fs");
 var currentLoads = require("../../currentLoads.json");
 // import fresh
-const importFresh = require("import-fresh");
 // find new current loads every 10 second
 setInterval(() => {
   currentLoads = importFresh("../../currentLoads.json");
