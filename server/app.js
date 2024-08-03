@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === "development") {
   });
 } else {
   console.log("not in development");
-  const buildPath = "../../../../var/www/html/build";
+  const buildPath = "../../../../../var/www/html/build";
   app.use(express.static(path.join(__dirname, buildPath)));
   app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, buildPath, "index.html"));
