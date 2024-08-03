@@ -6,7 +6,7 @@ const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
 // C:/Users/evanh/OneDrive/Desktop/liams-load-board/seeder/MasterDat/currentLoads.json
 
-const PORT = process.env.PORT || 6001;
+const PORT = process.env.PORT || 3001;
 const app = express();
 const server = new ApolloServer({
   typeDefs,
