@@ -1,6 +1,7 @@
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
+const Inputs = require("./models/Inputs");
 require("dotenv").config();
 const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
@@ -42,6 +43,7 @@ const startApolloServer = async (typeDefs, resolvers) => {
       console.log(
         `Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`
       );
+      console.log(await Inputs.find({}));
       // await main();
     });
   });
