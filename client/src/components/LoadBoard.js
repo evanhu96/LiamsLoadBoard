@@ -31,8 +31,9 @@ const LoadBoard = ({ rows }) => {
     const interval = setInterval(() => {
       if (!loading && !error) {
         refetch();
+        console.log(data.loads[0].hash)
       }
-    }, 10000); // 10000 ms = 10 seconds
+    }, 1000); // 10000 ms = 10 seconds
     // Clean up the interval on component unmount
     return () => clearInterval(interval);
   }, [loading, error, data, refetch]);
