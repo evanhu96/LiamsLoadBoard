@@ -40,7 +40,6 @@ const Load = ({ index, row }) => {
       </td>
       <td>{row.rate}</td>
       <td>{row.profit}</td>
-      <td>{row.totalTime}</td>
       <td>{row.origin}</td>
       <td>{row.destination}</td>
       <td>{row.dates}</td>
