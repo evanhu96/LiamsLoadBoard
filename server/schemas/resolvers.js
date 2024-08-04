@@ -17,7 +17,7 @@ const resolvers = {
       // delete old inputs
       await Inputs.deleteMany({});
       Inputs.create({
-        location: "Philadelphia, PA",
+        location,
         arrivalDate,
         dates,
         deadhead,
