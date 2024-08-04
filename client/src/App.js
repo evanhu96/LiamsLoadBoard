@@ -20,7 +20,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 const httpLink = createHttpLink({
   // uri: "http://localhost:3001/graphql",
-  uri: "https://3.145.115.140/graphql",
+  uri: "https://sportsbrew.online/graphql",
   // Replace with your server's GraphQL endpoint
 });
 const authLink = setContext((_, { headers }) => {
