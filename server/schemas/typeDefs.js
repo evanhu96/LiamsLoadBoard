@@ -6,6 +6,11 @@ const typeDefs = gql`
     company: String
     contact: String
     origin: String
+    distance: Float
+    profit: Float
+    rate: Float
+    deadhead: Float
+    
     destination: String
     travelTime: Float
     hotSpot: String
@@ -25,6 +30,8 @@ const typeDefs = gql`
     ): Load
 
     loads: [Load]
+
+    cities: [String]
   }
 `;
 

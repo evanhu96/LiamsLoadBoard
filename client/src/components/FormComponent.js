@@ -5,14 +5,6 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Select from "react-select";
 import { SEND_LOAD_INPUTS } from "../utils/queries";
-const cities = [
-  { value: "New York", label: "New York" },
-  { value: "Los Angeles", label: "Los Angeles" },
-  { value: "Chicago", label: "Chicago" },
-  { value: "Houston", label: "Houston" },
-  { value: "Phoenix", label: "Phoenix" },
-  // Add more cities as needed
-];
 
 const FormComponent = () => {
   const [location, setLocation] = useState(null);
@@ -75,7 +67,7 @@ const FormComponent = () => {
             <Form.Group controlId="formLocation">
               <Form.Label>Location</Form.Label>
               <Select
-                options={cities}
+                options={["cities"]}
                 value={location}
                 onChange={setLocation}
                 placeholder="Enter location"

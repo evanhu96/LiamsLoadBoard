@@ -1,16 +1,17 @@
 // connect to backend test
-import { SEND_LOAD_INPUTS } from "../utils/queries";
 import { useQuery } from "@apollo/client";
-const Test = ({ rows }) => {
-  const { error, data } = useQuery(SEND_LOAD_INPUTS, {
-    variables: {
-      location: "String",
-      maxDead: 20,
-      maxDistance: 30,
-      dates: "1/1",
-    },
-  });
-  if (error) console.log(error);
+import { GET_CITIES } from "../utils/queries";
+
+const Test = () => {
+  const {data, loading, error} = useQuery(GET_CITIES);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+  if (error) {
+    console.log(error);
+    return <div>Error!</div>;
+  }
+  console.log(data);
   return;
 };
 

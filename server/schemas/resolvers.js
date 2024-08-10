@@ -1,6 +1,6 @@
 const Inputs = require("../models/Inputs");
 const Load = require("../models/Load");
-
+const City = require("../models/City");
 fs = require("fs");
 var currentLoads = require("../../currentLoads.json");
 // import fresh
@@ -12,7 +12,6 @@ const resolvers = {
       _,
       { location, arrivalDate, dates, deadhead, distance, combined }
     ) => {
-
       console.log("inputs resolver");
       // delete old inputs
       await Inputs.deleteMany({});
@@ -44,6 +43,11 @@ const resolvers = {
       return loads;
 
       // return JSON.parse(loads);
+    },
+    cities: async (_) => {
+      const cities = await City.find({}).distinct("city");
+      console.log(cities,'cities');
+      return cities;
     },
   },
 };

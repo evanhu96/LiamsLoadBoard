@@ -30,6 +30,26 @@ export const SEND_LOAD_INPUTS = gql`
   }
 `;
 
+export const GET_CITIES = gql`
+  query Loads {
+    loads {
+      hash
+      company
+      contact
+      origin
+      destination
+      deadhead
+      distance
+      profit
+      rate
+      travelTime
+      hotSpot
+      distanceFromHotSpot
+      age
+      notes
+    }
+  }
+`;
 export const GET_LOADS = gql`
   query Loads {
     loads {
@@ -38,6 +58,10 @@ export const GET_LOADS = gql`
       contact
       origin
       destination
+      deadhead
+      distance
+      profit
+      rate
       travelTime
       hotSpot
       distanceFromHotSpot

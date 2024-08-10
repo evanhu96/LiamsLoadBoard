@@ -1,7 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import FormComponent from "./components/FormComponent";
 import LoadBoard from "./components/LoadBoard";
-
+import NotificationParameters from "./components/NotificationParameters";
+import Test from "./components/Test";
+import { useState } from "react";
 // import Test from "./Test";
 import {
   ApolloClient,
@@ -11,7 +15,7 @@ import {
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ListGroup from "react-bootstrap/ListGroup";
+import { ListGroup, Button } from "react-bootstrap";
 import loads from "./loads.json";
 
 import { BrowserRouter as Router } from "react-router-dom";
@@ -42,12 +46,21 @@ const client = new ApolloClient({
 });
 
 function App() {
+  const [modalShow, setModalShow] = useState(false);
   return (
     <ApolloProvider client={client}>
       <Router>
+        <Test />
         <div className="container mt-5">
           <h1 className="mb-4">Liams LoadBoard</h1>
           {/* <Test/> */}
+          <Button variant="primary" onClick={() => setModalShow(true)}>
+            <FontAwesomeIcon icon={faStar} style={{ color: "#ffff00" }} />
+          </Button>
+          <NotificationParameters
+            show={modalShow}
+            handleClose={() => setModalShow(false)}
+          />
           <FormComponent />
           <ListGroup>
             <LoadBoard rows={Object.values(loads)} />

@@ -1,9 +1,11 @@
 // Import necessary packages
 import React, { useState, useEffect } from "react";
-import { Table, Container, Stack } from "react-bootstrap";
+import { Table, Container, Button } from "react-bootstrap";
 import Load from "./Load";
 import { useQuery } from "@apollo/client";
 import { GET_LOADS } from "../utils/queries";
+import NotificationParameters from "./NotificationParameters";
+// fontawesome star symbol
 const minutes = (timeString) => {
   // Check if the string is in the format 'number + h' or 'number + m'
   if (/^\d+h$/.test(timeString)) {
@@ -23,6 +25,8 @@ const minutes = (timeString) => {
 };
 // Load component that accepts props
 const LoadBoard = ({ rows }) => {
+
+
   // Table rows can be generated based on the data props if there are multiple records.
   // Define a style object for the Notes column
   const { loading, data, error, refetch } = useQuery(GET_LOADS);
@@ -84,6 +88,9 @@ const LoadBoard = ({ rows }) => {
   });
   return (
     <Container>
+
+
+
       <Table striped bordered hover>
         <thead>
           <tr>
