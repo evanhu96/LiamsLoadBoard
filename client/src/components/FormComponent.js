@@ -5,8 +5,9 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Select from "react-select";
 import { SEND_LOAD_INPUTS } from "../utils/queries";
-
+import { GET_CITIES } from "../utils/queries";
 const FormComponent = () => {
+  const {data:citiesData, loading:citiesLoading, error:citiesError} = useQuery(GET_CITIES);
   const [location, setLocation] = useState(null);
   const [arrivalDate, setArrivalDate] = useState(new Date());
   const [distance, setDistance] = useState(1000);
@@ -67,7 +68,7 @@ const FormComponent = () => {
             <Form.Group controlId="formLocation">
               <Form.Label>Location</Form.Label>
               <Select
-                options={["cities"]}
+                options={citiesData ? citiesData.cities.map((city) => ({ value: city, label: city })) : []}
                 value={location}
                 onChange={setLocation}
                 placeholder="Enter location"

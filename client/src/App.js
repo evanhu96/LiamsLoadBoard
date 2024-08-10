@@ -50,7 +50,6 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <Test />
         <div className="container mt-5">
           <h1 className="mb-4">Liams LoadBoard</h1>
           {/* <Test/> */}

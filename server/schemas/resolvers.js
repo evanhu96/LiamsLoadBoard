@@ -45,8 +45,10 @@ const resolvers = {
       // return JSON.parse(loads);
     },
     cities: async (_) => {
-      const cities = await City.find({}).distinct("city");
-      console.log(cities,'cities');
+      // find distinct cities sorted by count
+      const citiesData = await City.find({}).sort({ count: -1 })
+      const cities = citiesData.map(city => city.city);
+      
       return cities;
     },
   },
