@@ -7,15 +7,18 @@ import Select from "react-select";
 import { SEND_LOAD_INPUTS } from "../utils/queries";
 import { GET_CITIES } from "../utils/queries";
 const FormComponent = () => {
-  const {data:citiesData, loading:citiesLoading, error:citiesError} = useQuery(GET_CITIES);
+  const {
+    data: citiesData,
+    loading: citiesLoading,
+    error: citiesError,
+  } = useQuery(GET_CITIES);
   const [location, setLocation] = useState(null);
   const [arrivalDate, setArrivalDate] = useState(new Date());
   const [distance, setDistance] = useState(1000);
   const [deadhead, setDeadhead] = useState(70);
-  const [combined, setCombined] = useState(1000);
+  const [destination, setDestination] = useState(1000);
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
-
   // get current date in 07/24 format
   const { loading, error, data, refetch } = useQuery(SEND_LOAD_INPUTS, {
     variables: {
@@ -23,12 +26,12 @@ const FormComponent = () => {
       arrivalDate,
       distance,
       deadhead,
-      combined,
+      destination,
       dates: "dateRange",
     },
   });
   if (error) {
-    console.log(error);
+    // console.log(error);
   }
   if (data) {
     console.log(data);
@@ -41,7 +44,7 @@ const FormComponent = () => {
       arrivalDate,
       distance,
       deadhead,
-      combined,
+      destination,
       dates: "dateRange",
     };
     console.log("Form Data:", formData);
@@ -68,7 +71,14 @@ const FormComponent = () => {
             <Form.Group controlId="formLocation">
               <Form.Label>Location</Form.Label>
               <Select
-                options={citiesData ? citiesData.cities.map((city) => ({ value: city, label: city })) : []}
+                options={
+                  citiesData
+                    ? citiesData.cities.map((city) => ({
+                        value: city,
+                        label: city,
+                      }))
+                    : []
+                }
                 value={location}
                 onChange={setLocation}
                 placeholder="Enter location"
@@ -110,6 +120,26 @@ const FormComponent = () => {
         {/* space evenly */}
         <Row className="justify-content-md-center">
           <Col md={4}>
+            <Form.Group controlId="formDestination">
+              <Form.Label>Destination</Form.Label>
+              <Select
+                options={
+                  citiesData
+                    ? citiesData.cities.map((city) => ({
+                        value: city,
+                        label: city,
+                      }))
+                    : []
+                }
+                value={location}
+                onChange={setLocation}
+                placeholder="Enter destination"
+                isClearable
+                required
+              />
+            </Form.Group>
+          </Col>
+          <Col md={4}>
             <Form.Group controlId="formDistance">
               <Form.Label>Distance</Form.Label>
               <Form.Control
@@ -128,19 +158,6 @@ const FormComponent = () => {
                 placeholder="Enter deadhead"
                 value={deadhead}
                 onChange={(e) => setDeadhead(e.target.value)}
-                autoS
-                required
-              />
-            </Form.Group>
-          </Col>
-          <Col md={4}>
-            <Form.Group controlId="formCombined">
-              <Form.Label>Combined</Form.Label>
-              <Form.Control
-                type="number"
-                placeholder="Enter combined"
-                value={combined}
-                onChange={(e) => setCombined(e.target.value)}
                 autoS
                 required
               />

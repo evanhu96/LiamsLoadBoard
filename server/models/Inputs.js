@@ -5,17 +5,26 @@ const inputsSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  deadhead: {
-    type: Number,
-  },
   distance: {
     type: Number,
   },
-  combined: {
+  deadhead: {
     type: Number,
   },
   dates: {
     type: String,
+  },
+  notificationDistance: {
+    type: Number,
+  },
+  notificationDeadhead: {
+    type: Number,
+  },
+  notificationProfit: {
+    type: Number,
+  },
+  notificationTime: {
+    type: Number,
   },
 });
 

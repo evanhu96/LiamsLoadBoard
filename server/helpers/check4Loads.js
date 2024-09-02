@@ -9,7 +9,6 @@ const check4Loads = async (
   loads,
   { dates, deadhead, combined, distance, location }
 ) => {
-
   const keys = Object.keys(loads);
   const goodLoads = [];
   for (const key of keys) {
@@ -21,7 +20,9 @@ const check4Loads = async (
     const lane = await getLaneInfo(origin, destination);
     if (lane.distance > distance) continue;
 
-    load.profit = load.rate - fuelCost(lane.distance, deadLane.distance);
+    load.profit = (
+      load.rate - fuelCost(lane.distance, deadLane.distance)
+    ).toFixed(2);
     const totalTravelTime = lane.travelTime + deadLane.travelTime;
     // check hotspots distances
     const philadelphia = await getLaneInfo(destination, "Philadelphia, PA");
@@ -44,6 +45,8 @@ const check4Loads = async (
     // city of hotspot
     const city = hotspots[0].destination;
     load.hotspot = city;
+    // distance of hotspot
+    load.hotspotDistance = hotspots[0].distance;
 
     const totalDistance =
       parseFloat(deadLane.distance) + parseFloat(lane.distance);

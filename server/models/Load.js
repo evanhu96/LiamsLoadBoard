@@ -30,12 +30,63 @@ const loadSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  LastRepostAge: {
+  contact: {
+    type: String,
+  },
+  trip: {
+    type: Number,
+  },
+  lastScene: {
+    type: Number,
+  },
+  lastPosted: {
+    type: Number,
+  },
+  postEpoch: {
     type: Number,
     required: true,
   },
-  contact: {
+  favorites: {
+    type: Boolean,
+  },
+  deadhead: {
+    type: Number,
+  },
+  load: {
     type: String,
+  },
+  truck: {
+    type: String,
+  },
+  weight: {
+    type: String,
+  },
+  commodity: {
+    type: String,
+  },
+  referenceID: {
+    type: String,
+  },
+  comments: {
+    type: String,
+  },
+  clickDetails: {
+    type: String,
+  },
+  age: {
+    type: String,
+  },
+  newData: {
+    type: Boolean,
+  },
+  currentDeadhead: {
+    type: Number,
+  },
+  hotspot: {
+    type: String,
+  },
+  hotspotDistance: {
+    type: Number,
   },
 });
 

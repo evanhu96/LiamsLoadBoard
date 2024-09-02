@@ -1,7 +1,8 @@
 ## USER STORY
+
 User will be able to use application to connect to a database of loads
 
-loads will uptade live 
+loads will uptade live
 
 User will open a web browser that has this application running
 
@@ -15,7 +16,7 @@ Loads should each have a list of information company, number, email,etc... displ
 
 Loads should be sortable based on things like profit or distance from hotspot
 
-HotSpot td should include a compass direction "NE of BAL(northeast of Baltimore)"
+hotspot td should include a compass direction "NE of BAL(northeast of Baltimore)"
 
 Excellent loads should also have a notes section
 

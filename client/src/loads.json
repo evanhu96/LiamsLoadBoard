@@ -15,6 +15,7 @@
         "contact": "ohne",
         "date": "07/21/2024 21:05:46",
         "profit":1,
+
         "notes":"oswdddddddddddddddddddddddddddddddddddddd"
     },
     "Philadelphia,PA-Columbia,TN-7/23-1700": {
@@ -105,6 +106,7 @@
     "Philadelphia,PA-Minneapolis,MN-7/22-2100": {
         "hash": "Philadelphia,PA-Minneapolis,MN-7/22-2100",
         "rate": 2100,
+        "favorites":true,
         "origin": "Philadelphia,PA",
         "destination": "Minneapolis,MN",
         "dates": "7/22",

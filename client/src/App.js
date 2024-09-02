@@ -5,7 +5,7 @@ import FormComponent from "./components/FormComponent";
 import LoadBoard from "./components/LoadBoard";
 import NotificationParameters from "./components/NotificationParameters";
 import Test from "./components/Test";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // import Test from "./Test";
 import {
   ApolloClient,
@@ -17,16 +17,15 @@ import { setContext } from "@apollo/client/link/context";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ListGroup, Button } from "react-bootstrap";
 import loads from "./loads.json";
-
 import { BrowserRouter as Router } from "react-router-dom";
 
 // import json loads
 
 const httpLink = createHttpLink({
-  // uri: "http://localhost:3001/graphql",
+  uri: "http://localhost:3001/graphql",
   // uri: "http://http://18.119.85.42/graphql",
   // uri: "https://sportsbrew.online/graphql",
-  uri: "https://sportsbrew.online/graphql",
+  // uri: "https://sportsbrew.online/graphql",
 
   // Replace with your server's GraphQL endpoint
 });
@@ -42,11 +41,11 @@ const authLink = setContext((_, { headers }) => {
 
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache({}),
 });
-
 function App() {
   const [modalShow, setModalShow] = useState(false);
+
   return (
     <ApolloProvider client={client}>
       <Router>
@@ -61,9 +60,7 @@ function App() {
             handleClose={() => setModalShow(false)}
           />
           <FormComponent />
-          <ListGroup>
-            <LoadBoard rows={Object.values(loads)} />
-          </ListGroup>
+          <LoadBoard />
         </div>
       </Router>
     </ApolloProvider>

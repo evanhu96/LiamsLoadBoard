@@ -5,8 +5,8 @@
   "origin": "String",
   "destination": "String",
   "travelTime": 22,
-  "hotSpot": "String",
-  "distanceFromHotSpot": "String",
+  "hotspot": "String",
+  "hotspotDistance": "String",
   "age": "String",
   "notes": "String"
 }

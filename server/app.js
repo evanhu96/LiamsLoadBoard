@@ -43,7 +43,6 @@ const startApolloServer = async (typeDefs, resolvers) => {
       console.log(
         `Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`
       );
-      console.log(await Inputs.find({}));
       // await main();
     });
   });

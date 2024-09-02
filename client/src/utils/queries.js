@@ -16,42 +16,64 @@ export const SEND_LOAD_INPUTS = gql`
       deadhead: $deadhead
       combined: $combined
     ) {
-      hash
-      company
-      contact
-      origin
-      destination
-      travelTime
-      hotSpot
-      distanceFromHotSpot
-      age
-      notes
+      location
+      arrivalDate
+      dates
+      distance
+      deadhead
+      combined
     }
+  }
+`;
+export const SEND_NOTIFICATION_INPUTS = gql`
+  query Query(
+    $notificationDistance: Float
+    $notificationDeadhead: Float
+    $notificationProfit: Float
+    $notificationTime: Float
+  ) {
+    notificationInputs(
+      notificationDistance: $notificationDistance
+      notificationDeadhead: $notificationDeadhead
+      notificationProfit: $notificationProfit
+      notificationTime: $notificationTime
+    )
   }
 `;
 
 export const GET_CITIES = gql`
-query Cities {
-  cities
-}
+  query Cities {
+    cities
+  }
 `;
+
 export const GET_LOADS = gql`
   query Loads {
     loads {
       hash
+      dates
+      trip
+      lastScene
+      lastPosted
+      postEpoch
+      favorites
       company
       contact
       origin
-      destination
-      deadhead
       distance
       profit
       rate
+      deadhead
+      destination
       travelTime
-      hotSpot
-      distanceFromHotSpot
+      hotspot
+      hotspotDistance
       age
       notes
+      clickNumber
+      comments
+      clickDetails
+      currentDeadhead
     }
   }
 `;

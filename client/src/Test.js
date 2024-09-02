@@ -5,10 +5,11 @@ import { Table, Container, Stack } from "react-bootstrap";
 // Load component that accepts props
 const LoadBoard = ({ loads }) => {
   // Table rows can be generated based on the data props if there are multiple records.
-console.log(loads);
+  console.log(loads);
   return (
-    <Container>
-      <Table striped bordered hover>
+    // center container
+    <Container  style={{ marginRight:'200px' }}>
+      <Table striped bordered hover >
         <thead>
           <tr>
             <th>Phone Number</th>
@@ -16,13 +17,13 @@ console.log(loads);
             <th>Email</th>
             <th>Rate</th>
             <th>Profit</th>
-            <th>Total Time</th>
+            {/* <th>Total Time</th> */}
             <th>Origin</th>
             <th>Destination</th>
             <th>Dates</th>
             <th>Distance</th>
             <th>Deadhead</th>
-            <th>Hotspot</th>
+            <th>hotspot</th>
             <th>Age</th>
             <th>Notes</th>
           </tr>
@@ -40,7 +41,7 @@ console.log(loads);
               </td>
               <td>{row.rate}</td>
               <td>{row.profit}</td>
-              <td>{row.totalTime}</td>
+              {/* <td>{row.totalTime}</td> */}
               <td>{row.origin}</td>
               <td>{row.destination}</td>
               <td>{row.dates}</td>
@@ -49,7 +50,7 @@ console.log(loads);
               <td>
                 <Stack>
                   <p style={{ marginBottom: "0" }}>
-                    {row.deadheadFromHotspot} from
+                    {row.deadheadFromhotspot} from
                   </p>
                   <p style={{ color: "red" }}> {row.hotspot}</p>
                 </Stack>
