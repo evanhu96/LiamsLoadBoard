@@ -1,11 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from "react";
 import FormComponent from "./components/FormComponent";
 import LoadBoard from "./components/LoadBoard";
 import NotificationParameters from "./components/NotificationParameters";
-import Test from "./components/Test";
-import { useState, useEffect } from "react";
 // import Test from "./Test";
 import {
   ApolloClient,
@@ -15,8 +13,7 @@ import {
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { ListGroup, Button } from "react-bootstrap";
-import loads from "./loads.json";
+import { Button } from "react-bootstrap";
 import { BrowserRouter as Router } from "react-router-dom";
 
 // import json loads
@@ -25,7 +22,6 @@ const httpLink = createHttpLink({
   // uri: "http://localhost:3001/graphql",
   // uri: "http://http://18.119.85.42/graphql",
   uri: "https://sportsbrew.online/graphql",
-  // uri: "https://sportsbrew.online/graphql",
 
   // Replace with your server's GraphQL endpoint
 });
@@ -48,7 +44,7 @@ function App() {
 
   return (
     <ApolloProvider client={client}>
-      <Router>
+cd      <Router>
         <div className="container mt-5">
           <h1 className="mb-4">Liams LoadBoard</h1>
           {/* <Test/> */}

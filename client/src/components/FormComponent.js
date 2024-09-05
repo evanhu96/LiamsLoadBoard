@@ -22,36 +22,35 @@ const FormComponent = () => {
   // get current date in 07/24 format
   const { loading, error, data, refetch } = useQuery(SEND_LOAD_INPUTS, {
     variables: {
-      location: location ? location.value : "",
+      location: location ? location.value : "Tobyhanna, PA",
       arrivalDate,
+      dates: "dateRange",
       distance,
       deadhead,
-      destination,
-      dates: "dateRange",
     },
   });
+
   if (error) {
-    // console.log(error);
+    console.log(error);
   }
-  if (data) {
-    console.log(data);
-  }
+
   // usequery
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = {
-      location: location ? location.value : "",
+      location: location ? location.value : "Tobyhanna, PA",
       arrivalDate,
+      dates: "9/999",
       distance,
       deadhead,
       destination,
-      dates: "dateRange",
     };
     console.log("Form Data:", formData);
     // Perform form submission logic here (e.g., send data to a server)
     await refetch({
-      location: location ? location.value : "",
+      location: location ? location.value : "Tobyhanna, PA",
       arrivalDate,
+      dates: "9/999",
       distance,
       deadhead,
     });

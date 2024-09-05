@@ -6,7 +6,6 @@ export const SEND_LOAD_INPUTS = gql`
     $dates: String
     $distance: Float
     $deadhead: Float
-    $combined: Float
   ) {
     loadInputs(
       location: $location
@@ -14,15 +13,7 @@ export const SEND_LOAD_INPUTS = gql`
       dates: $dates
       distance: $distance
       deadhead: $deadhead
-      combined: $combined
-    ) {
-      location
-      arrivalDate
-      dates
-      distance
-      deadhead
-      combined
-    }
+    )
   }
 `;
 export const SEND_NOTIFICATION_INPUTS = gql`

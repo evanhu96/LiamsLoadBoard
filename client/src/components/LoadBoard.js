@@ -28,13 +28,12 @@ const minutes = (timeString) => {
 // Load component that accepts props
 const LoadBoard = () => {
   const [favoritesOnly, setFavoritesOnly] = useState(false);
+  const [sortBy, setSortBy] = useState({ column: "ls", order: "asc" });
 
   // Table rows can be generated based on the data props if there are multiple records.
   // Define a style object for the Notes column
   const { loading, data, error, refetch } = useQuery(GET_LOADS);
-  console.log(error);
   console.log(loading);
-  console.log(data);
   var rows;
   if (!loading) {
     rows = data.loads;
@@ -50,11 +49,9 @@ const LoadBoard = () => {
   }, [loading, error, data, refetch]);
   // refetch if not loading
   if (!loading && data && !error) {
-    console.log(data.loads, 53);
   } else if (error) {
     console.log("error", error);
   }
-  const [sortBy, setSortBy] = useState({ column: null, order: "asc" });
 
   // Function to handle sorting
   const handleSort = (columnName) => {
@@ -70,16 +67,20 @@ const LoadBoard = () => {
   };
   // Define a function to sort rows
   var sortedRows;
-  if (rows)
+  if (rows) {
     sortedRows = [...rows].sort((a, b) => {
       if (sortBy.column === "distance") {
         return sortBy.order === "asc"
           ? a.distance - b.distance
           : b.distance - a.distance;
-      } else if (sortBy.column === "age") {
+      } else if (sortBy.column === "ls") {
         return sortBy.order === "asc"
-          ? minutes(a.age) - minutes(b.age)
-          : minutes(b.age) - minutes(a.age);
+          ? b.lastScene - a.lastScene
+          : a.lastScene - b.lastScene;
+      } else if (sortBy.column === "lp") {
+        return sortBy.order === "asc"
+          ? b.lastPosted - a.lastPosted
+          : a.lastPosted - b.lastPosted;
       } else if (sortBy.column === "deadhead") {
         return sortBy.order === "asc"
           ? a.deadhead - b.deadhead
@@ -95,6 +96,7 @@ const LoadBoard = () => {
         return 0;
       }
     });
+  }
   return (
     <Container>
       <Button
@@ -119,9 +121,8 @@ const LoadBoard = () => {
             <th onClick={() => handleSort("deadhead")}>Deadhead</th>
             <th>hotspot</th>
             <th>hsCity</th>
-            <th onClick={() => handleSort("age")}>Age</th>
-            <th>LP</th>
-            <th>LS</th>
+            <th onClick={() => handleSort("lp")}>LP</th>
+            <th onClick={() => handleSort("ls")}>LS</th>
           </tr>
         </thead>
         <tbody>

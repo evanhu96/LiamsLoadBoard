@@ -25,7 +25,6 @@ const InputModal = ({ show, handleClose }) => {
       notificationTime: time,
     },
   });
-  console.log(data, "sjadojusoajo");
   const handleSave = () => {
     setNotificationParams({
       notificationDistance: distance,

@@ -13,10 +13,12 @@ const resolvers = {
       _,
       { location, arrivalDate, dates, deadhead, distance, combined }
     ) => {
-      // console.log("inputs resolver");
-      // console.log(location);
       let inputs;
       if (location !== "") {
+        // format location as city, state
+        const cityWithoutSpaces = location.split(",")[0].trim()
+        const state = location.split(",")[1].trim()
+        location = cityWithoutSpaces + ", " + state;
         // if no inputs exist, create new inputs
         const inputsCheck = await Inputs.findOne({});
         if (!inputsCheck)
@@ -26,7 +28,6 @@ const resolvers = {
             dates,
             deadhead,
             distance,
-            combined,
           });
         else
           inputs = await Inputs.updateOne(
@@ -38,12 +39,12 @@ const resolvers = {
                 dates,
                 deadhead,
                 distance,
-                combined,
               },
             }
           );
+        inputs = await Inputs.findOne({}).lean();
       } else inputs = await Inputs.findOne({}).lean();
-      return inputs;
+      return 1
     },
     notificationInputs: async (
       _,
@@ -94,7 +95,7 @@ const resolvers = {
       deadhead = parseFloat(deadhead);
       const loads = await Load.find({
         trip: { $lt: distance },
-        currentDeadhead: { $lt: deadhead +100},
+        currentDeadhead: { $lt: deadhead + 100 },
       });
 
       return loads;

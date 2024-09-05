@@ -52,7 +52,6 @@ const Load = ({ index, row, favoritesOnly }) => {
       setHash(defaultHash);
     }
   }, [row]); // Empty dependency array means this effect runs only once after the initial render
-  console.log(row);
   // useEffect to update local storage whenever the hash changes
   useEffect(() => {
     localStorage.setItem("userHash", hash);
@@ -109,8 +108,6 @@ const Load = ({ index, row, favoritesOnly }) => {
           <td>{row.hotspot}</td>
           <td>{minutesSinceLastScene}</td>
           <td>{minutesSinceLastPosted}</td>
-          <td>{minutesSinceLastScene}</td>
-          <td style={notesCellStyle}>{"6"}</td>
           <td>
             <FontAwesomeIcon
               icon={faClose}

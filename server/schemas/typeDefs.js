@@ -49,7 +49,7 @@ const typeDefs = gql`
       distance: Float
       deadhead: Float
       combined: Float
-    ): Input
+    ): Float
 
     notificationInputs(
       notificationDistance: Float
