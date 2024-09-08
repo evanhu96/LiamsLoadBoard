@@ -14,22 +14,23 @@ const FormComponent = () => {
   } = useQuery(GET_CITIES);
   const [location, setLocation] = useState(null);
   const [arrivalDate, setArrivalDate] = useState(new Date());
-  const [distance, setDistance] = useState(1000);
-  const [deadhead, setDeadhead] = useState(70);
-  const [destination, setDestination] = useState(1000);
+  const [distance, setDistance] = useState(null);
+  const [deadhead, setDeadhead] = useState(null);
+  const [dates, setDates] = useState(null);
+  const [destination, setDestination] = useState(null);
   const [startDate, setStartDate] = useState(new Date());
+
   const [endDate, setEndDate] = useState(new Date());
   // get current date in 07/24 format
   const { loading, error, data, refetch } = useQuery(SEND_LOAD_INPUTS, {
     variables: {
       location: location ? location.value : "Tobyhanna, PA",
       arrivalDate,
-      dates: "dateRange",
+      dates,
       distance,
       deadhead,
     },
   });
-
   if (error) {
     console.log(error);
   }
@@ -37,23 +38,17 @@ const FormComponent = () => {
   // usequery
   const handleSubmit = async (event) => {
     event.preventDefault();
+    console.log("SOJAIOJXiojaIOJS");
+    console.log(distance, deadhead, destination);
     const formData = {
       location: location ? location.value : "Tobyhanna, PA",
       arrivalDate,
-      dates: "9/999",
+      dates,
       distance,
       deadhead,
-      destination,
     };
-    console.log("Form Data:", formData);
     // Perform form submission logic here (e.g., send data to a server)
-    await refetch({
-      location: location ? location.value : "Tobyhanna, PA",
-      arrivalDate,
-      dates: "9/999",
-      distance,
-      deadhead,
-    });
+    await refetch(formData);
     // refetch the query to update the UI
   };
   const onDateChange = (dates) => {
@@ -145,7 +140,7 @@ const FormComponent = () => {
                 type="number"
                 placeholder="Enter distance"
                 value={distance}
-                onChange={(e) => setDistance(e.target.value)}
+                onChange={(e) => setDistance(parseFloat(e.target.value))}
               />
             </Form.Group>
           </Col>
@@ -156,7 +151,7 @@ const FormComponent = () => {
                 type="number"
                 placeholder="Enter deadhead"
                 value={deadhead}
-                onChange={(e) => setDeadhead(e.target.value)}
+                onChange={(e) => setDeadhead(parseFloat(e.target.value))}
                 autoS
                 required
               />

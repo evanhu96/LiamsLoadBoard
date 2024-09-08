@@ -11,7 +11,7 @@ const resolvers = {
   Query: {
     loadInputs: async (
       _,
-      { location, arrivalDate, dates, deadhead, distance, combined }
+      { location, arrivalDate, dates, deadhead, distance }
     ) => {
       let inputs;
       if (location !== "") {
@@ -21,6 +21,13 @@ const resolvers = {
         location = cityWithoutSpaces + ", " + state;
         // if no inputs exist, create new inputs
         const inputsCheck = await Inputs.findOne({});
+        // if any props are null set them equal to inputsCheck
+        location = location || inputsCheck.location;
+        arrivalDate = arrivalDate || inputsCheck.arrivalDate;
+        dates = dates || inputsCheck.dates;
+        deadhead = deadhead || inputsCheck.deadhead;
+        distance = distance || inputsCheck.distance;
+
         if (!inputsCheck)
           inputs = await Inputs.create({
             location,
@@ -44,7 +51,7 @@ const resolvers = {
           );
         inputs = await Inputs.findOne({}).lean();
       } else inputs = await Inputs.findOne({}).lean();
-      return 1
+      return inputs;
     },
     notificationInputs: async (
       _,
@@ -58,6 +65,11 @@ const resolvers = {
       var inputs;
       const inputsCheck = await Inputs.findOne({});
       console.log(inputsCheck);
+      notificationDistance = notificationDistance || inputsCheck.notificationDistance;
+      notificationDeadhead = notificationDeadhead || inputsCheck.notificationDeadhead;
+      notificationProfit = notificationProfit || inputsCheck.notificationProfit;
+      notificationTime = notificationTime || inputsCheck.notificationTime;
+
       if (!inputsCheck) {
         console.log("creating inputs");
         inputs = await Inputs.create({
@@ -85,12 +97,14 @@ const resolvers = {
         );
       }
 
-      return 1;
+      return inputs
     },
 
     loads: async (_) => {
+      
       // check for new loads every 15 seconds
-      var { distance, deadhead } = await Inputs.findOne({});
+      var { distance, deadhead,dates } = await Inputs.findOne({});
+      console.log(dates,'dates')
       distance = parseFloat(distance);
       deadhead = parseFloat(deadhead);
       const loads = await Load.find({

@@ -33,7 +33,6 @@ const LoadBoard = () => {
   // Table rows can be generated based on the data props if there are multiple records.
   // Define a style object for the Notes column
   const { loading, data, error, refetch } = useQuery(GET_LOADS);
-  console.log(loading);
   var rows;
   if (!loading) {
     rows = data.loads;

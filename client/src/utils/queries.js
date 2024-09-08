@@ -13,7 +13,17 @@ export const SEND_LOAD_INPUTS = gql`
       dates: $dates
       distance: $distance
       deadhead: $deadhead
-    )
+    ) {
+      location
+      arrivalDate
+      dates
+      distance
+      deadhead
+      notificationDeadhead
+      notificationDistance
+      notificationProfit
+      notificationTime
+    }
   }
 `;
 export const SEND_NOTIFICATION_INPUTS = gql`
@@ -28,7 +38,17 @@ export const SEND_NOTIFICATION_INPUTS = gql`
       notificationDeadhead: $notificationDeadhead
       notificationProfit: $notificationProfit
       notificationTime: $notificationTime
-    )
+    ) {
+      location
+      arrivalDate
+      dates
+      distance
+      deadhead
+      notificationDeadhead
+      notificationDistance
+      notificationProfit
+      notificationTime
+    }
   }
 `;
 

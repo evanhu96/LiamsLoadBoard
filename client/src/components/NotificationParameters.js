@@ -4,17 +4,16 @@ const { SEND_NOTIFICATION_INPUTS } = require("../utils/queries");
 const { useQuery } = require("@apollo/client");
 
 const InputModal = ({ show, handleClose }) => {
-  const [distance, setDistance] = useState(5);
-  const [deadhead, setDeadhead] = useState(0);
-  const [profit, setProfit] = useState(0);
-  const [time, setTime] = useState(0);
+  const [distance, setDistance] = useState(null);
+  const [deadhead, setDeadhead] = useState(null);
+  const [profit, setProfit] = useState(null);
+  const [time, setTime] = useState(null);
   const [notificationParams, setNotificationParams] = useState({
     notificationDistance: 1,
     notificationDeadhead: 1,
     notificationProfit: 1,
     notificationTime: 3,
   });
-  console.log(notificationParams);
 
   // get current date in 07/24 format
   const { data, error, refetch } = useQuery(SEND_NOTIFICATION_INPUTS, {
