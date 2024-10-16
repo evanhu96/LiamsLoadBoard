@@ -16,8 +16,8 @@ const resolvers = {
       let inputs;
       if (location !== "") {
         // format location as city, state
-        const cityWithoutSpaces = location.split(",")[0].trim()
-        const state = location.split(",")[1].trim()
+        const cityWithoutSpaces = location.split(",")[0].trim();
+        const state = location.split(",")[1].trim();
         location = cityWithoutSpaces + ", " + state;
         // if no inputs exist, create new inputs
         const inputsCheck = await Inputs.findOne({});
@@ -65,8 +65,10 @@ const resolvers = {
       var inputs;
       const inputsCheck = await Inputs.findOne({});
       console.log(inputsCheck);
-      notificationDistance = notificationDistance || inputsCheck.notificationDistance;
-      notificationDeadhead = notificationDeadhead || inputsCheck.notificationDeadhead;
+      notificationDistance =
+        notificationDistance || inputsCheck.notificationDistance;
+      notificationDeadhead =
+        notificationDeadhead || inputsCheck.notificationDeadhead;
       notificationProfit = notificationProfit || inputsCheck.notificationProfit;
       notificationTime = notificationTime || inputsCheck.notificationTime;
 
@@ -97,21 +99,19 @@ const resolvers = {
         );
       }
 
-      return inputs
+      return inputs;
     },
 
     loads: async (_) => {
-      
       // check for new loads every 15 seconds
-      var { distance, deadhead,dates } = await Inputs.findOne({});
-      console.log(dates,'dates')
+      var { distance, deadhead, dates } = await Inputs.findOne({});
       distance = parseFloat(distance);
       deadhead = parseFloat(deadhead);
       const loads = await Load.find({
         trip: { $lt: distance },
         currentDeadhead: { $lt: deadhead + 100 },
       });
-
+      console.log(loads);
       return loads;
 
       // return JSON.parse(loads);
