@@ -40,11 +40,12 @@ const client = new ApolloClient({
   cache: new InMemoryCache({}),
 });
 function App() {
+  console.log("in App.js"); 
   const [modalShow, setModalShow] = useState(false);
 
   return (
     <ApolloProvider client={client}>
-cd      <Router>
+      <Router>
         <div className="container mt-5">
           <h1 className="mb-4">Liams LoadBoard</h1>
           {/* <Test/> */}
