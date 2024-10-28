@@ -26,10 +26,11 @@ const minutes = (timeString) => {
   }
 };
 // Load component that accepts props
-const LoadBoard = () => {
+const LoadBoard = ({ notificationFilter, textsFilter }) => {
   const [favoritesOnly, setFavoritesOnly] = useState(false);
-  const [sortBy, setSortBy] = useState({ column: "ls", order: "asc" });
-
+  const [textsOnly, setTextsOnly] = useState(false);
+  const [sortBy, setSortBy] = useState({ column: "age", order: "asc" });
+  const [sortedRows, setSortedRows] = useState([]);
   // Table rows can be generated based on the data props if there are multiple records.
   // Define a style object for the Notes column
   const { loading, data, error, refetch } = useQuery(GET_LOADS);
@@ -65,44 +66,54 @@ const LoadBoard = () => {
     }));
   };
   // Define a function to sort rows
-  var sortedRows;
-  if (rows) {
-    sortedRows = [...rows].sort((a, b) => {
-      if (sortBy.column === "distance") {
-        return sortBy.order === "asc"
-          ? a.distance - b.distance
-          : b.distance - a.distance;
-      } else if (sortBy.column === "ls") {
-        return sortBy.order === "asc"
-          ? b.lastScene - a.lastScene
-          : a.lastScene - b.lastScene;
-      } else if (sortBy.column === "lp") {
-        return sortBy.order === "asc"
-          ? b.lastPosted - a.lastPosted
-          : a.lastPosted - b.lastPosted;
-      } else if (sortBy.column === "deadhead") {
-        return sortBy.order === "asc"
-          ? a.deadhead - b.deadhead
-          : b.deadhead - a.deadhead;
-      } else if (sortBy.column === "rate") {
-        return sortBy.order === "asc" ? a.rate - b.rate : b.rate - a.rate;
-      } else if (sortBy.column === "profit") {
-        return sortBy.order === "asc"
-          ? a.profit - b.profit
-          : b.profit - a.profit;
-      } else {
-        // Default: maintain current order
-        return 0;
-      }
-    });
-  }
+  console.log("rows", rows);
+  useEffect(() => {
+    if (!rows) return;
+    setSortedRows(
+      [...rows].sort((a, b) => {
+        if (sortBy.column === "distance") {
+          return sortBy.order === "asc" ? a.trip - b.trip : b.trip - a.trip;
+        } else if (sortBy.column === "age") {
+          // console.log()
+          return sortBy.order === "asc"
+            ? parseInt(b.age.slice(0, -1)) - parseInt(a.age.slice(0, -1))
+            : parseInt(a.age.slice(0, -1)) - parseInt(b.age.slice(0, -1));
+        } else if (sortBy.column === "deadhead") {
+          return sortBy.order === "asc"
+            ? a.currentDeadhead - b.currentDeadhead
+            : b.currentDeadhead - a.currentDeadhead;
+        } else if (sortBy.column === "rate") {
+          return sortBy.order === "asc" ? a.rate - b.rate : b.rate - a.rate;
+        } else if (sortBy.column === "profit") {
+          return sortBy.order === "asc"
+            ? a.profit - b.profit
+            : b.profit - a.profit;
+        } else {
+          // Default: maintain current order
+          return 0;
+        }
+      })
+    );
+  }, [sortBy, rows]);
   return (
     <Container>
       <Button
         variant="primary"
-        onClick={() => setFavoritesOnly(!favoritesOnly)}
+        onClick={() => {
+          setFavoritesOnly(!favoritesOnly);
+          setTextsOnly(false);
+        }}
       >
         <FontAwesomeIcon icon={faStar} style={{ color: "#ffff00" }} />
+      </Button>
+      <Button
+        variant="primary"
+        onClick={() => {
+          setTextsOnly(!textsOnly);
+          setFavoritesOnly(false);
+        }}
+      >
+        <FontAwesomeIcon icon={faStar} style={{ color: "#24e316" }} />
       </Button>
       <Table striped bordered hover>
         <thead>
@@ -116,18 +127,24 @@ const LoadBoard = () => {
             <th>Origin</th>
             <th>Destination</th>
             <th>Dates</th>
-            <th onClick={() => handleSort("distance")}>Distance</th>
+            <th onClick={() => handleSort("distance")}>trip</th>
             <th onClick={() => handleSort("deadhead")}>Deadhead</th>
             <th>hotspot</th>
             <th>hsCity</th>
-            <th onClick={() => handleSort("lp")}>LP</th>
-            <th onClick={() => handleSort("ls")}>LS</th>
+            <th onClick={() => handleSort("age")}>age</th>
           </tr>
         </thead>
         <tbody>
           {rows &&
             sortedRows.map((row, index) => (
-              <Load key={index} row={row} favoritesOnly={favoritesOnly} />
+              <Load
+                key={index}
+                row={row}
+                favoritesOnly={favoritesOnly}
+                textsOnly={textsOnly}
+                textsFilter={textsFilter}
+                notificationFilter={notificationFilter}
+              />
             ))}
         </tbody>
       </Table>

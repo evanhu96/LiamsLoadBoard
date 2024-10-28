@@ -1,38 +1,37 @@
-import { set } from "date-fns";
 import React, { useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
-const { SEND_NOTIFICATION_INPUTS } = require("../utils/queries");
+const { SEND_TEXT_INPUTS } = require("../utils/queries");
 const { useQuery } = require("@apollo/client");
 
-const InputModal = ({ show, handleClose,  setNotificationFilter }) => {
+const InputModal = ({ show, handleClose, setTextFilter }) => {
   const [distance, setDistance] = useState(null);
   const [deadhead, setDeadhead] = useState(null);
   const [profit, setProfit] = useState(null);
   const [time, setTime] = useState(null);
-  const [notificationParams, setNotificationParams] = useState({
-    notificationDistance: 1,
-    notificationDeadhead: 1,
-    notificationProfit: 1,
-    notificationTime: 3,
+  const [textParams, setTextParams] = useState({
+    textDistance: 1,
+    textDeadhead: 1,
+    textProfit: 1,
+    textTime: 3,
   });
 
   // get current date in 07/24 format
-  const { data, error, refetch } = useQuery(SEND_NOTIFICATION_INPUTS, {
+  const { data, error, refetch } = useQuery(SEND_TEXT_INPUTS, {
     variables: {
-      notificationDistance: distance,
-      notificationDeadhead: deadhead,
-      notificationProfit: profit,
-      notificationTime: time,
+      textDistance: distance,
+      textDeadhead: deadhead,
+      textProfit: profit,
+      textTime: time,
     },
   });
   const handleSave = () => {
-    setNotificationParams({
-      notificationDistance: distance,
-      notificationDeadhead: deadhead,
-      notificationProfit: profit,
-      notificationTime: time,
+    setTextParams({
+      textDistance: distance,
+      textDeadhead: deadhead,
+      textProfit: profit,
+      textTime: time,
     });
-    setNotificationFilter({
+    setTextFilter({
       distance: distance,
       deadhead: deadhead,
       profit: profit,
@@ -45,18 +44,18 @@ const InputModal = ({ show, handleClose,  setNotificationFilter }) => {
     console.log(distance, deadhead, profit, time);
     console.log("submitting");
     await refetch({
-      notificationDistance: parseInt(distance),
-      notificationDeadhead: parseInt(deadhead),
-      notificationProfit: parseInt(profit),
-      notificationTime: parseInt(time),
+      textDistance: parseInt(distance),
+      textDeadhead: parseInt(deadhead),
+      textProfit: parseInt(profit),
+      textTime: parseInt(time),
     });
     handleClose();
   };
   const handleNoSubmit = () => {
-    setDistance(notificationParams.notificationDistance);
-    setDeadhead(notificationParams.notificationDeadhead);
-    setProfit(notificationParams.notificationProfit);
-    setTime(notificationParams.notificationTime);
+    setDistance(textParams.textDistance);
+    setDeadhead(textParams.textDeadhead);
+    setProfit(textParams.textProfit);
+    setTime(textParams.textTime);
     handleClose();
   };
 

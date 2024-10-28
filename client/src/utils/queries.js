@@ -23,6 +23,10 @@ export const SEND_LOAD_INPUTS = gql`
       notificationDistance
       notificationProfit
       notificationTime
+      textDeadhead
+      textDistance
+      textProfit
+      textTime
     }
   }
 `;
@@ -48,6 +52,39 @@ export const SEND_NOTIFICATION_INPUTS = gql`
       notificationDistance
       notificationProfit
       notificationTime
+      textDeadhead
+      textDistance
+      textProfit
+      textTime
+    }
+  }
+`;
+export const SEND_TEXT_INPUTS = gql`
+  query Query(
+    $textDistance: Float
+    $textDeadhead: Float
+    $textProfit: Float
+    $textTime: Float
+  ) {
+    textInputs(
+      textDistance: $textDistance
+      textDeadhead: $textDeadhead
+      textProfit: $textProfit
+      textTime: $textTime
+    ) {
+      location
+      arrivalDate
+      dates
+      distance
+      deadhead
+      notificationDeadhead
+      notificationDistance
+      notificationProfit
+      notificationTime
+      textDeadhead
+      textDistance
+      textProfit
+      textTime
     }
   }
 `;
@@ -85,6 +122,7 @@ export const GET_LOADS = gql`
       comments
       clickDetails
       currentDeadhead
+      tab
     }
   }
 `;

@@ -1,13 +1,12 @@
 import {
+  faClose,
   faEnvelope,
   faExclamationCircle,
   faPhone,
-  faClose,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from "react";
-import { Stack, Button } from "react-bootstrap";
 import DetailDropdown from "./DetailDropdown";
 const IconIndicator = ({ input }) => {
   let icon = faExclamationCircle; // Default icon for neither email nor phone
@@ -26,7 +25,22 @@ const IconIndicator = ({ input }) => {
   return <FontAwesomeIcon icon={icon} style={{ color: "#74C0FC" }} />;
 };
 
-const Load = ({ index, row, favoritesOnly }) => {
+const checkCriteria = ({ row, typeCheck, filter }) => {
+  if (typeCheck) {
+    if (row.distance > filter.distance && filter.distance > 0) return false;
+    if (row.deadhead > filter.deadhead && filter.deadhead > 0) return false;
+    if (row.profit < filter.profit && filter.profit > 0) return false;
+  }
+  return true;
+};
+const Load = ({
+  index,
+  row,
+  favoritesOnly,
+  textsOnly,
+  textsFilter,
+  notificationFilter,
+}) => {
   const [comments, setComments] = useState("");
 
   // use this for accurate last posted times
@@ -56,7 +70,18 @@ const Load = ({ index, row, favoritesOnly }) => {
   useEffect(() => {
     localStorage.setItem("userHash", hash);
   }, [hash]);
-  if (favoritesOnly && !row.favorites) return;
+  if (
+    !checkCriteria({
+      row,
+      typeCheck: favoritesOnly,
+      filter: notificationFilter,
+    })
+  ) {
+    return;
+  }
+  if (!checkCriteria({ row, typeCheck: textsOnly, filter: textsFilter })) {
+    return;
+  }
   const handleRowClick = (row) => {
     const localStorageObject = JSON.parse(localStorage.getItem(row.hash));
     localStorageObject.clicked = true;
@@ -79,8 +104,8 @@ const Load = ({ index, row, favoritesOnly }) => {
   // check if contact is email or phone number
   const emailOrPhone = checkEmailOrPhoneNumber(row.contact);
   const emailOrPhone2 = checkEmailOrPhoneNumber(row.clickNumber);
-  const minutesSinceLastScene = Math.floor((now - row.lastScene) / 60000);
-  const minutesSinceLastPosted = Math.floor((now - row.lastPosted) / 60000);
+  // const minutesSinceLastScene = Math.floor((now - row.lastScene) / 60000);
+  // const minutesSinceLastPosted = Math.floor((now - row.lastPosted) / 60000);
   if (active) {
     return (
       <>
@@ -96,7 +121,6 @@ const Load = ({ index, row, favoritesOnly }) => {
             <IconIndicator input={emailOrPhone2} />
           </td>
           <td>{row.company}</td>
-
           <td>{row.rate}</td>
           <td>{row.profit}</td>
           <td>{row.origin}</td>
@@ -106,8 +130,7 @@ const Load = ({ index, row, favoritesOnly }) => {
           <td>{row.currentDeadhead}</td>
           <td>{row.hotspotDistance} from</td>
           <td>{row.hotspot}</td>
-          <td>{minutesSinceLastScene}</td>
-          <td>{minutesSinceLastPosted}</td>
+          <td>{row.age}</td>
           <td>
             <FontAwesomeIcon
               icon={faClose}

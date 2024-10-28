@@ -113,7 +113,7 @@ const FormComponent = () => {
         </Row>
         {/* space evenly */}
         <Row className="justify-content-md-center">
-          <Col md={4}>
+          {/* <Col md={4}>
             <Form.Group controlId="formDestination">
               <Form.Label>Destination</Form.Label>
               <Select
@@ -132,7 +132,7 @@ const FormComponent = () => {
                 required
               />
             </Form.Group>
-          </Col>
+          </Col> */}
           <Col md={4}>
             <Form.Group controlId="formDistance">
               <Form.Label>Distance</Form.Label>
