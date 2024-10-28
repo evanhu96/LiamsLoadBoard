@@ -26,6 +26,18 @@ const inputsSchema = new mongoose.Schema({
   notificationTime: {
     type: Number,
   },
+  textDistance: {
+    type: Number,
+  },
+  textDeadhead: {
+    type: Number,
+  },
+  textProfit: {
+    type: Number,
+  },
+  textTime: {
+    type: Number,
+  },
 });
 
 const Inputs = mongoose.model("Inputs", inputsSchema);

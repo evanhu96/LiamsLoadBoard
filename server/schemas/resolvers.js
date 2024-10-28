@@ -82,10 +82,6 @@ const resolvers = {
         });
       } else {
         console.log("updating inputs");
-        console.log(notificationDistance);
-        console.log(notificationDeadhead);
-        console.log(notificationProfit);
-        console.log(notificationTime);
         inputs = await Inputs.updateOne(
           {},
           {
@@ -101,17 +97,53 @@ const resolvers = {
 
       return inputs;
     },
+    textInputs: async (
+      _,
+      { textDistance, textDeadhead, textProfit, textTime }
+    ) => {
+      var inputs;
+      const inputsCheck = await Inputs.findOne({});
+      console.log(inputsCheck);
+      textDistance = textDistance || inputsCheck.textDistance;
+      textDeadhead = textDeadhead || inputsCheck.textDeadhead;
+      textProfit = textProfit || inputsCheck.textProfit;
+      textTime = textTime || inputsCheck.textTime;
+
+      if (!inputsCheck) {
+        console.log("creating inputs");
+        inputs = await Inputs.create({
+          textDistance,
+          textDeadhead,
+          textProfit,
+          textTime,
+        });
+      } else {
+        console.log("updating inputs");
+        inputs = await Inputs.updateOne(
+          {},
+          {
+            $set: {
+              textDistance,
+              textDeadhead,
+              textProfit,
+              textTime,
+            },
+          }
+        );
+      }
+
+      return inputs;
+    },
 
     loads: async (_) => {
       // check for new loads every 15 seconds
-      var { distance, deadhead, dates } = await Inputs.findOne({});
+      var { distance, deadhead } = await Inputs.findOne({});
       distance = parseFloat(distance);
       deadhead = parseFloat(deadhead);
       const loads = await Load.find({
         trip: { $lt: distance },
         currentDeadhead: { $lt: deadhead + 100 },
       });
-      console.log(loads);
       return loads;
 
       // return JSON.parse(loads);

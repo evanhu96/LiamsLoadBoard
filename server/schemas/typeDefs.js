@@ -27,6 +27,7 @@ const typeDefs = gql`
     comments: String
     clickDetails: String
     currentDeadhead: Float
+    tab: Float
   }
   type Input {
     location: String
@@ -39,6 +40,10 @@ const typeDefs = gql`
     notificationDistance: Float
     notificationProfit: Float
     notificationTime: Float
+    textDeadhead: Float
+    textDistance: Float
+    textProfit: Float
+    textTime: Float
   }
 
   type Query {
@@ -56,6 +61,12 @@ const typeDefs = gql`
       notificationDeadhead: Float
       notificationProfit: Float
       notificationTime: Float
+    ): Input
+    textInputs(
+      textDistance: Float
+      textDeadhead: Float
+      textProfit: Float
+      textTime: Float
     ): Input
 
     loads: [Load]

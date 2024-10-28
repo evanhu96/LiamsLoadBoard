@@ -27,28 +27,6 @@ if (process.env.NODE_ENV === "development") {
 } else {
   console.log("not in development");
   const buildPath = "../../../../../var/www/html/build";
-  // log folder name of ../
-  const folderName = path.basename(path.join(__dirname, "../"));
-  // log folder name of ../../
-  const folderName2 = path.basename(path.join(__dirname, "../../"));
-  const folderName3 = path.basename(path.join(__dirname, "../../../"));
-  const folderName4 = path.basename(path.join(__dirname, "../../../../"));
-  const folderName5 = path.basename(path.join(__dirname, "../../../../../"));
-  const varfolder = path.basename(path.join(__dirname, "../../../../../../var"));
-  // log folders inside of varFolder
-  const innerFolders = fs.readdirSync(path.join(__dirname, "../../../../../../var"));
-  console.log("innerFolders", innerFolders);
-  const wwwfolder = path.basename(path.join(__dirname, "../../../../../../var/www"));
-  const htmlfolder = path.basename(path.join(__dirname, "../../../../../../var/www/html"));
-  console.log("folderName", folderName);  
-  console.log("folderName2", folderName2);
-  console.log("folderName3", folderName3);
-  console.log("folderName4", folderName4);
-  console.log("folderName5", folderName5);
-  console.log("varfolder", varfolder);
-  console.log("wwwfolder", wwwfolder);
-  console.log("htmlfolder", htmlfolder);
-
   app.use(express.static(path.join(__dirname, buildPath)));
   app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, buildPath, "index.html"));

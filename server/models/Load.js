@@ -76,7 +76,7 @@ const loadSchema = new mongoose.Schema({
   age: {
     type: String,
   },
-  newData: {
+  active: {
     type: Boolean,
   },
   currentDeadhead: {
@@ -86,6 +86,9 @@ const loadSchema = new mongoose.Schema({
     type: String,
   },
   hotspotDistance: {
+    type: Number,
+  },
+  tab: {
     type: Number,
   },
 });
